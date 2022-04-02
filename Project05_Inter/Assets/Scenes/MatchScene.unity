@@ -3473,6 +3473,9 @@ MonoBehaviour:
   pointsForFourOfAKind: 5
   pointsForTwoPair: 2
   pointsForFullHouse: 4
+  pointsForFlush: 5
+  pointsForSequence: 0
+  pointsForRoyalFlush: 0
 --- !u!1001 &1676214892
 PrefabInstance:
   m_ObjectHideFlags: 0

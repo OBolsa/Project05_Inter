@@ -9,8 +9,11 @@ public class DecksCombinations : MonoBehaviour, ICombinations
     public int pointsForFourOfAKind;
     public int pointsForTwoPair;
     public int pointsForFullHouse;
+    public int pointsForFlush;
+    public int pointsForSequence;
+    public int pointsForRoyalFlush;
 
-    public int CheckCombinationOne(List<GameObject> cards)
+    public int CheckCardsValueCombinations(List<GameObject> cards)
     {
         bool pair = false;
         bool threeOfAKind = false;
@@ -18,21 +21,21 @@ public class DecksCombinations : MonoBehaviour, ICombinations
         bool twoPair = false;
         bool fullHouse = false;
 
-        List<CardSystem> configs = new List<CardSystem>();
+        List<CardSystem> cardsInfo = new List<CardSystem>();
 
         foreach(GameObject g in cards)
         {
-            configs.Add(g.GetComponent<CardSystem>());
+            cardsInfo.Add(g.GetComponent<CardSystem>());
         }
 
         for (int i = 1; i < 6; i++)
         {
             int numberOfCards = 0;
 
-            for (int j = 0; j < configs.Count; j++)
+            for (int j = 0; j < cardsInfo.Count; j++)
             {
 
-                if(configs[j].Config.cardValue == i)
+                if(cardsInfo[j].Config.cardValue == i)
                 {
                     numberOfCards += 1;
                 }
@@ -100,16 +103,58 @@ public class DecksCombinations : MonoBehaviour, ICombinations
         else return 0;
     }
 
-    public int CheckCombinationTwo(List<GameObject> cards)
+    public int CheckCardsSuitsCombinations(List<GameObject> cards)
     {
-        
-        return 0;
+        List<CardSystem> cardsInfo = new List<CardSystem>();
+
+        foreach(GameObject g in cards)
+        {
+            cardsInfo.Add(g.GetComponent<CardSystem>());
+        }
+
+        if (CheckSuits(CardSuits.Clubs, cardsInfo) || CheckSuits(CardSuits.Diamonds, cardsInfo) || CheckSuits(CardSuits.Hearts, cardsInfo) || CheckSuits(CardSuits.Spades, cardsInfo))
+        {
+            Debug.Log("Have Flush!");
+            return pointsForFlush;
+        }
+        else
+            return 0;
     }
 
-    public int CheckCombinationThree(List<GameObject> cards)
+    public int CheckCardsSequenceCombinations(List<GameObject> cards)
     {
-        
-        return 0;
+        bool haveSequence = true;
+        List<CardSystem> cardsInfo = new List<CardSystem>();
+
+        foreach (GameObject g in cards)
+        {
+            cardsInfo.Add(g.GetComponent<CardSystem>());
+        }
+
+        for (int i = 0; i < cardsInfo.Count; i++)
+        {
+            if (cardsInfo[i].Config.cardValue != i + 1)
+            {
+                haveSequence = false;
+                break;
+            }
+        }
+
+        if (haveSequence)
+        {
+            if (CheckSuits(CardSuits.Clubs, cardsInfo) || CheckSuits(CardSuits.Diamonds, cardsInfo) || CheckSuits(CardSuits.Hearts, cardsInfo) || CheckSuits(CardSuits.Spades, cardsInfo))
+            {
+                Debug.Log("Have Royal Flush!");
+                return pointsForRoyalFlush;
+            }
+            else
+            {
+                Debug.Log("Have Sequence!");
+                return pointsForSequence;
+            }
+        }
+        else
+            return 0;
     }
 
     public int CheckCombinationFour(List<GameObject> cards)
@@ -122,5 +167,18 @@ public class DecksCombinations : MonoBehaviour, ICombinations
     {
         
         return 0;
+    }
+
+    public bool CheckSuits(CardSuits suit, List<CardSystem> cards)
+    {
+        for (int i = 0; i < cards.Count; i++)
+        {
+            if(cards[i].Config.cardSuit != suit)
+            {
+                return false;
+            }
+        }
+
+        return true;
     }
 }

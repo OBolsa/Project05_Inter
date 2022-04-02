@@ -137,8 +137,13 @@ public class MatchSystem : MatchSystem_StateMachine
             EnemyPoints += EnemyCards[i].GetComponent<CardSystem>().Config.cardValue;
         }
 
-        PlayerPoints += CombinationsConfigs.CheckCombinationOne(PlayerCards);
-        EnemyPoints += CombinationsConfigs.CheckCombinationOne(EnemyCards);
+        PlayerPoints += CombinationsConfigs.CheckCardsValueCombinations(PlayerCards);
+        PlayerPoints += CombinationsConfigs.CheckCardsSuitsCombinations(PlayerCards);
+        PlayerPoints += CombinationsConfigs.CheckCardsSequenceCombinations(PlayerCards);
+
+        EnemyPoints += CombinationsConfigs.CheckCardsValueCombinations(EnemyCards);
+        EnemyPoints += CombinationsConfigs.CheckCardsSuitsCombinations(EnemyCards);
+        EnemyPoints += CombinationsConfigs.CheckCardsSequenceCombinations(EnemyCards);
 
         Debug.Log("Player: " + PlayerPoints + "| Enemy: " + EnemyPoints);
     }
