@@ -139,8 +139,8 @@ public class DiscardDeck : Deck
             deck.AddCard(Card[0]);
             debug += "- Card" + i + "Added to the " + deck.name + "\n";
 
-            Card[0].transform.SetParent(deck.transform, true);
-            debug += "- Card" + i + "setted transform to the " + deck.name + "\n";
+            Card[0].transform.SetParent(deck.transform, false);
+            debug += "- Card" + i + "setted transform tothe " + deck.name + "\n";
 
             Card[0].GetComponent<CardSystem>().StartCardMovement(deck.transform.position, deck.transform.rotation, 0.3f);
             debug += "- Card" + i + "starting movement" + "\n";

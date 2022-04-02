@@ -7,6 +7,7 @@ public class CardSystem : Card_StateMachineR
     [Header("Card Config")]
     public CardConfig Config;
     public CardUiElements UIElements;
+    public int CardImportance;
 
     [Header("External Scripts")]
     public GameObject cardModel;
@@ -100,5 +101,15 @@ public class CardSystem : Card_StateMachineR
                 desiredRotation = Quaternion.Euler(Vector3.zero);
             }
         }
+    }
+
+    public void AddCardImportance(int value)
+    {
+        CardImportance += value;
+    }
+
+    public void ResetCardImportance()
+    {
+        CardImportance = 0;
     }
 }

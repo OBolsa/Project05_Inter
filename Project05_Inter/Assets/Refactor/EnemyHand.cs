@@ -7,9 +7,11 @@ public class EnemyHand : Hand
     [Header("Card Atributtes")]
     public bool canMoveCard;
     public List<Vector3> cardPositions;
+    public IMatchEnemyAI EnemyAI;
 
     private void Awake()
     {
+        EnemyAI = GetComponent<IMatchEnemyAI>();
         cardPositions = new List<Vector3>();
     }
 
@@ -91,6 +93,8 @@ public class EnemyHand : Hand
 
             yield return WaitTime;
         }
+
+        EnemyAI.GiveCardValues(this);
     }
 
     public override void DrawCard(Deck deckUsed)
@@ -98,6 +102,44 @@ public class EnemyHand : Hand
         CardsInHand.Add(deckUsed.TopCard);
         deckUsed.DrawCard(transform);
         UpdateCardPosition();
+
+        EnemyAI.GiveCardValues(this);
+    }
+
+    public int GetCardByImportance(bool getMoreImportants)
+    {
+        List<int> mostImportantCardsIndex = new List<int>();
+        List<int> lessImportantCardsIndex = new List<int>();
+        int passingScore = 0;
+
+        for (int i = 0; i < CardsInHand.Count; i++)
+        {
+            if(CardsInHand[i].GetComponent<CardSystem>().CardImportance > passingScore)
+            {
+                passingScore = CardsInHand[i].GetComponent<CardSystem>().CardImportance;
+            }
+        }
+
+        //passingScore /= 2;
+
+        for (int i = 0; i < CardsInHand.Count; i++)
+        {
+            if (CardsInHand[i].GetComponent<CardSystem>().CardImportance >= passingScore)
+                mostImportantCardsIndex.Add(i);
+            else
+                lessImportantCardsIndex.Add(i);
+        }
+
+        if (getMoreImportants)
+        {
+            Debug.Log(mostImportantCardsIndex.Count > 0 ? "Tem cartas importantes!" : "N tem cartas importantes");
+            return mostImportantCardsIndex.Count > 0 ? mostImportantCardsIndex[Random.Range(0, mostImportantCardsIndex.Count - 1)] : Random.Range(0, CardsInHand.Count - 1);
+        }
+        else
+        {
+            Debug.Log(lessImportantCardsIndex.Count > 0 ? "Tem cartas inuteis!" : "N tem cartas inuteis");
+            return lessImportantCardsIndex.Count > 0 ? lessImportantCardsIndex[Random.Range(0, lessImportantCardsIndex.Count - 1)] : Random.Range(0, CardsInHand.Count - 1);
+        }
     }
 
     public override void DiscardCard(int cardIndex, Transform position)

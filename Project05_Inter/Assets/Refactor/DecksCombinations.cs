@@ -31,20 +31,25 @@ public class DecksCombinations : MonoBehaviour, ICombinations
 
             for (int j = 0; j < configs.Count; j++)
             {
+
                 if(configs[j].Config.cardValue == i)
                 {
                     numberOfCards += 1;
                 }
             }
 
-            Debug.Log("Tenho: " + numberOfCards + " de cartas de valor " + i);
-
             switch (numberOfCards)
             {
                 default:
                     break;
                 case 2:
-                    if (pair == false)
+                    if(threeOfAKind == true)
+                    {
+                        pair = false;
+                        threeOfAKind = false;
+                        fullHouse = true;
+                    }
+                    else if (pair == false)
                     {
                         pair = true;
                         twoPair = false;

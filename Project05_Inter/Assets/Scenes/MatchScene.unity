@@ -4934,6 +4934,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2109874822}
   - component: {fileID: 2109874821}
+  - component: {fileID: 2109874823}
   m_Layer: 0
   m_Name: EnemyHand
   m_TagString: Untagged
@@ -4973,6 +4974,18 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2109874823
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2109874820}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2fe36ce9f45ab6549800d8ec453984fd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &2126604875 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 447467733036680671, guid: 0c9b76faf9935d848afe7319b2220d3b, type: 3}

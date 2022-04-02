@@ -23,13 +23,13 @@ public class MatchState_EnemyTurn : MatchState
 
         // Enemy Discard's a card;
         Debug.Log("_Enemy Discard a card");
-        System.EnemyHand.DiscardCard(Random.Range(0, System.EnemyHand.CardsInHand.Count - 1), System.DiscardDeck.transform);
+        System.EnemyHand.DiscardCard(System.EnemyHand.GetCardByImportance(false), System.DiscardDeck.transform);
 
         yield return waitTime;
 
         // Enemy PutDown a card;
         Debug.Log("_Enemy Put Down a Card");
-        System.EnemyHand.PutCard(Random.Range(0, System.EnemyHand.CardsInHand.Count - 1), System.Board.EnemySpots[System.Turn]);
+        System.EnemyHand.PutCard(System.EnemyHand.GetCardByImportance(true), System.Board.EnemySpots[System.Turn]);
 
         yield return waitTime;
 

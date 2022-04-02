@@ -90,6 +90,7 @@ public class MainDeck : Deck
         debug += "[Cards Shuffled]";
         Debug.Log(debug);
 
+        UpdateUiElements();
         UpdateDeckVisuals();
     }
 
@@ -111,6 +112,7 @@ public class MainDeck : Deck
             Card.Add(g);
         }
 
+        UpdateUiElements();
         UpdateDeckVisuals();
     }
 
