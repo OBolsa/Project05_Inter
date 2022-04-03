@@ -3474,8 +3474,8 @@ MonoBehaviour:
   pointsForTwoPair: 2
   pointsForFullHouse: 4
   pointsForFlush: 5
-  pointsForSequence: 0
-  pointsForRoyalFlush: 0
+  pointsForSequence: 5
+  pointsForRoyalFlush: 6
 --- !u!1001 &1676214892
 PrefabInstance:
   m_ObjectHideFlags: 0
