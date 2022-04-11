@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class NPC_Dead : NPC_State
 {
-    public NPC_Dead(NPC_System system) : base(system)
+    public NPC_Dead(NPCSystem system) : base(system)
     {
     }
 

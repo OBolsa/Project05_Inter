@@ -140,6 +140,28 @@ public class DecksCombinations : MonoBehaviour, ICombinations
             }
         }
 
+        //if (!haveSequence)
+        //{
+        //    bool haveInvertedSequence = true;
+        //    int j = 0;
+
+        //    for (int i = 5; i > -1; i--)
+        //    {
+        //        if (cardsInfo[j].Config.cardValue != i)
+        //        {
+        //            haveInvertedSequence = false;
+        //            break;
+        //        }
+
+        //        j += 1;
+        //    }
+
+        //    if (haveInvertedSequence)
+        //    {
+        //        haveSequence = true;
+        //    }
+        //}
+
         if (haveSequence)
         {
             if (CheckSuits(CardSuits.Clubs, cardsInfo) || CheckSuits(CardSuits.Diamonds, cardsInfo) || CheckSuits(CardSuits.Hearts, cardsInfo) || CheckSuits(CardSuits.Spades, cardsInfo))

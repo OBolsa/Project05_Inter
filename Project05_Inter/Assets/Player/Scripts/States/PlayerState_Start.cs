@@ -2,9 +2,9 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class PlayerStart : PlayerState
+public class PlayerState_Start : PlayerState
 {   
-    public PlayerStart(PlayerSystems system) : base(system)
+    public PlayerState_Start(PlayerSystems system) : base(system)
     {
     }
 
@@ -14,6 +14,6 @@ public class PlayerStart : PlayerState
 
         yield return s;
 
-        Player.SetState(new Idle(Player));
+        Player.SetState(new PlayerState_Idle(Player));
     }
 }

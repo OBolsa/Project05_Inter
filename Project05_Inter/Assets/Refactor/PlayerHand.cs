@@ -170,6 +170,9 @@ public class PlayerHand : Hand
 
         spot.GetComponentInChildren<CardSystem>().StartCardMovement(spot.modelTransform.position, spot.modelTransform.rotation, 0.3f);
 
+        if (spot.GetComponentInChildren<CardSystem>().Config.CardEffects != null)
+            spot.GetComponentInChildren<CardSystem>().Config.CardEffects.OnPutCard();
+
         _selectedCard = null;
     }
 

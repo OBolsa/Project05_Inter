@@ -13,8 +13,10 @@ MonoBehaviour:
   m_Name: Card_Clubs_Julgamento
   m_EditorClassIdentifier: 
   cardName: XX - O Julgamento
-  cardDescription: 
+  cardDescription: "O advers\xE1rio perder\xE1 1 ponto para cada carta que seja de
+    um naipe diferente de Paus."
   cardImage: {fileID: 0}
   cardValue: 0
+  majorArcane: 1
   cardSuit: 0
-  effects: {fileID: 0}
+  effects: {fileID: 6782159985347266556, guid: 86900f9b5d61cb04d8c59f864dcf2ea7, type: 3}

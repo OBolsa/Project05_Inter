@@ -4,18 +4,19 @@ using UnityEngine;
 
 public class NPC_Walk : NPC_State
 {
-    public NPC_Walk(NPC_System system) : base(system)
+    public NPC_Walk(NPCSystem system) : base(system)
     {
     }
 
     public override IEnumerator Start()
     {
+        Debug.Log("NPC " + NPC.configs.npcName + " is Walking.");
         return base.Start();
     }
 
     public override void Move()
     {
-        NPC.rb.AddForce(NPC.direction * NPC.speed * Time.deltaTime * 100, ForceMode.Acceleration);
+        NPC.movement.DoMovement(NPC.speed);
     }
 
     public override void Stop()

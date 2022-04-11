@@ -4,9 +4,9 @@ using UnityEngine;
 
 public abstract class NPC_State
 {
-    protected NPC_System NPC;
+    protected NPCSystem NPC;
 
-    public NPC_State(NPC_System system)
+    public NPC_State(NPCSystem system)
     {
         NPC = system;
     }

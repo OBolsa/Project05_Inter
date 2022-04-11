@@ -13,8 +13,10 @@ MonoBehaviour:
   m_Name: Card_Clubs_Pendurado
   m_EditorClassIdentifier: 
   cardName: XII - O Pendurado
-  cardDescription: 
+  cardDescription: "Cartas que n\xE3o possuem pontos passam a valer 5. Cartas numeradas
+    tem seus pontos invertidos. 1 -> 5 / 2 -> 4 / 3 -> 3 / 4 -> 2 / 5 -> 1."
   cardImage: {fileID: 0}
   cardValue: 0
+  majorArcane: 1
   cardSuit: 0
-  effects: {fileID: 0}
+  effects: {fileID: 6782159985347266556, guid: 9c4fc224d48ce8448875d03c7a2c5e2a, type: 3}

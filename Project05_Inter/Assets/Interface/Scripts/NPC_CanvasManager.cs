@@ -6,7 +6,7 @@ using UnityEngine.UI;
 public class NPC_CanvasManager : MonoBehaviour
 {
     [Header("NPC Atributtes")]
-    public NPC_System npc;
+    public NPCSystem npc;
 
     [Header("Canvas Atributtes")]
     public GameObject interactDisplay;

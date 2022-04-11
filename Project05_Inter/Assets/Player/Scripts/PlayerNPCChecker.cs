@@ -6,7 +6,7 @@ public class PlayerNPCChecker : MonoBehaviour
 {
     public float radiusCheck;
     public LayerMask NPCLayer;
-    public NPC_System targetNPC;
+    public NPCSystem targetNPC;
 
     private void Update()
     {
@@ -32,13 +32,13 @@ public class PlayerNPCChecker : MonoBehaviour
             {
                 if (targetNPC == null)
                 {
-                    targetNPC = arround[i].GetComponent<NPC_System>();
+                    targetNPC = arround[i].GetComponent<NPCSystem>();
                 }
 
                 if (Vector3.Distance(transform.position, arround[i].transform.position) < Vector3.Distance(transform.position, targetNPC.transform.position))
                 {
                     DisplayNPCCanvas(false);
-                    targetNPC = arround[i].GetComponent<NPC_System>();
+                    targetNPC = arround[i].GetComponent<NPCSystem>();
                 }
             }
 

@@ -28,8 +28,17 @@ public class CardUiElements : MonoBehaviour
     public void UpdateElements()
     {
         cardName.text = card.Config.cardName;
-        number1.text = card.Config.cardValue.ToString();
-        number2.text = card.Config.cardValue.ToString();
+
+        if(card.Config.cardValue > 0)
+        {
+            number1.text = card.Config.cardValue.ToString();
+            number2.text = card.Config.cardValue.ToString();
+        }
+        else
+        {
+            number1.text = "";
+            number2.text = "";
+        }
 
         switch (card.Config.cardSuit)
         {

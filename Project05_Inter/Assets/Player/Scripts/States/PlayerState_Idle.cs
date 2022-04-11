@@ -1,9 +1,9 @@
 ﻿using System.Collections;
 using UnityEngine;
 
-public class Idle : PlayerState
+public class PlayerState_Idle : PlayerState
 {
-    public Idle(PlayerSystems system) : base(system)
+    public PlayerState_Idle(PlayerSystems system) : base(system)
     {
     }
 
@@ -14,7 +14,7 @@ public class Idle : PlayerState
 
     public override void Move()
     {
-        Player.SetState(new Walk(Player));
+        Player.SetState(new PlayerState_Walk(Player));
     }
 
     public override void Interact()

@@ -11,23 +11,16 @@ public class PlayerSystems : PlayerStateMachine
     public GameObject atualInteractedNPC;
     public int atualText = -1;
 
-    [Header("Player Movement")]
-    public float playerVelocity;
-    public float turnSmoothTime = 0.1f;
-    public Vector3 direction;
-    private Vector3 inputDirection;
-    private float turnSmoothVelocity;
+    [Header("External Scripts")]
+    public CharacterMovement pMovement;
 
     private void Start()
     {
-        SetState(new PlayerStart(this));
-        inputDirection = Vector3.zero;
+        SetState(new PlayerState_Start(this));
     }
 
     private void Update()
     {
-        MovementCheck();
-
         if (npcChecker.targetNPC != null)
         {
             if (npcChecker.targetNPC.gameObject != atualInteractedNPC)
@@ -36,7 +29,7 @@ public class PlayerSystems : PlayerStateMachine
                 interfaceManager.dialogueText.text = "";
 
                 if (atualInteractedNPC != null)
-                    atualInteractedNPC.GetComponent<NPC_System>().isTalking = false;
+                    atualInteractedNPC.GetComponent<NPCSystem>().isTalking = false;
 
                 Dialogue(false);
             }
@@ -53,36 +46,13 @@ public class PlayerSystems : PlayerStateMachine
             interfaceManager.dialogueText.text = "";
 
             if(atualInteractedNPC != null)
-                atualInteractedNPC.GetComponent<NPC_System>().isTalking = false;
+                atualInteractedNPC.GetComponent<NPCSystem>().isTalking = false;
 
             Dialogue(false);
         }
 
-    }
-
-    private void MovementCheck()
-    {
-        inputDirection.x = Input.GetAxisRaw("Horizontal");
-        inputDirection.z = Input.GetAxisRaw("Vertical");
-        inputDirection.Normalize();
-
-        direction.x = inputDirection.x;
-        direction.z = inputDirection.z;
-        direction.Normalize();
-
-        if (inputDirection.magnitude >= 0.1f)
-        {
-            Vector3 angle = (transform.position + direction) - transform.position;
-            Quaternion rotation = Quaternion.Euler(0f, angle.y, 0f);
-
-            transform.rotation = rotation;
-
+        if (pMovement.IsMoving)
             State.Move();
-        }
-        else if (inputDirection.magnitude < 0.1f)
-        {
-            State.Stop();
-        }
     }
 
     public void Dialogue(bool condition)

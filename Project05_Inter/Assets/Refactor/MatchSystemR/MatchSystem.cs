@@ -145,7 +145,29 @@ public class MatchSystem : MatchSystem_StateMachine
         EnemyPoints += CombinationsConfigs.CheckCardsSuitsCombinations(EnemyCards);
         EnemyPoints += CombinationsConfigs.CheckCardsSequenceCombinations(EnemyCards);
 
+        foreach (CardSpot c in Board.PlayerSpots)
+        {
+            if(c.cardInThisSpot.GetComponent<CardSystem>().Config.CardEffects != null)
+                c.cardInThisSpot.GetComponent<CardSystem>().Config.CardEffects.OnEndTurn();
+        }
+
+        foreach (CardSpot c in Board.EnemySpots)
+        {
+            if (c.cardInThisSpot.GetComponent<CardSystem>().Config.CardEffects != null)
+                c.cardInThisSpot.GetComponent<CardSystem>().Config.CardEffects.OnEndTurn();
+        }
+
         Debug.Log("Player: " + PlayerPoints + "| Enemy: " + EnemyPoints);
+    }
+
+    public void AddPlayerPoints(int points)
+    {
+        PlayerPoints += points;
+    }
+
+    public void AddEnemyPoints(int points)
+    {
+        EnemyPoints += points;
     }
 
     public void ResetPoints()

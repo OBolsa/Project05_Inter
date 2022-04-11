@@ -20,10 +20,24 @@ public class CardConfig : ScriptableObject
 
     [Header("Card Values Atributtes")]
     public int cardValue;
+    public bool majorArcane;
     public CardSuits cardSuit;
 
     [Header("Card Effects")]
-    [SerializeField] private Object effects;
+    [SerializeField] private GameObject effects;
+    private ICardEffects _cardEffects;
 
-    public ICardEffects CardEffects { get { return (ICardEffects)effects; }}
+    public ICardEffects CardEffects 
+    {
+        get 
+        {
+            if (effects != null)
+            {
+                _cardEffects = effects.GetComponent<ICardEffects>();
+                return _cardEffects;
+            }
+            else
+                return null;
+        }
+    }
 }

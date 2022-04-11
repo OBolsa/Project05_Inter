@@ -13,8 +13,11 @@ MonoBehaviour:
   m_Name: Card_Clubs_Mundo
   m_EditorClassIdentifier: 
   cardName: XXI - O Mundo
-  cardDescription: 
+  cardDescription: "Ganha pontos de maneira que a sua carta de menor valor tenha
+    o mesmo valor da carta de maior valor do oponente. Al\xE9m disso, o oponente
+    iguala sua carta de maior valor \xE0 carta de menor valor em campo."
   cardImage: {fileID: 0}
   cardValue: 0
+  majorArcane: 1
   cardSuit: 0
-  effects: {fileID: 0}
+  effects: {fileID: 6782159985347266556, guid: 746b215816594374c8b95ac2436675af, type: 3}
