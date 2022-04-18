@@ -13,6 +13,7 @@ public class PlayerSystems : PlayerStateMachine
 
     [Header("External Scripts")]
     public CharacterMovement pMovement;
+    public TextBoxSystem textBox;
 
     private void Start()
     {
@@ -21,35 +22,38 @@ public class PlayerSystems : PlayerStateMachine
 
     private void Update()
     {
-        if (npcChecker.targetNPC != null)
-        {
-            if (npcChecker.targetNPC.gameObject != atualInteractedNPC)
-            {
-                atualText = -1;
-                interfaceManager.dialogueText.text = "";
+        //bool haveNpc = npcChecker.targetNPC != null;
+        //bool isADiferentNpc = npcChecker.targetNPC.gameObject != atualInteractedNPC;
 
-                if (atualInteractedNPC != null)
-                    atualInteractedNPC.GetComponent<NPCSystem>().isTalking = false;
+        //if (haveNpc)
+        //{
+        //    if (isADiferentNpc)
+        //    {
+        //        atualText = -1;
+        //        interfaceManager.dialogueText.text = "";
 
-                Dialogue(false);
-            }
+        //        if (atualInteractedNPC != null)
+        //            atualInteractedNPC.GetComponent<NPCSystem>().isTalking = false;
 
-            if (Input.GetKeyDown(KeyCode.G))
-            {
-                State.Interact();
-            }
+        //        Dialogue(false);
+        //    }
 
-        }
-        else
-        {
-            atualText = -1;
-            interfaceManager.dialogueText.text = "";
+        //    if (Input.GetKeyDown(KeyCode.G))
+        //    {
+        //        State.Interact();
+        //    }
 
-            if(atualInteractedNPC != null)
-                atualInteractedNPC.GetComponent<NPCSystem>().isTalking = false;
+        //}
+        //else
+        //{
+        //    atualText = -1;
+        //    interfaceManager.dialogueText.text = "";
 
-            Dialogue(false);
-        }
+        //    if(atualInteractedNPC != null)
+        //        atualInteractedNPC.GetComponent<NPCSystem>().isTalking = false;
+
+        //    Dialogue(false);
+        //}
 
         if (pMovement.IsMoving)
             State.Move();
@@ -71,39 +75,39 @@ public class PlayerSystems : PlayerStateMachine
 
     public void DialogueController()
     {
-        if(npcChecker.targetNPC.interactionState == 0)
-        {
-            if (atualText == -1)
-            {
-                npcChecker.targetNPC.StopMove();
-                npcChecker.targetNPC.isTalking = true;
+        //if(npcChecker.targetNPC.interactionState == 0)
+        //{
+        //    if (atualText == -1)
+        //    {
+        //        npcChecker.targetNPC.StopMove();
+        //        npcChecker.targetNPC.isTalking = true;
 
-                atualText = 0;
-                interfaceManager.dialogueText.text = npcChecker.targetNPC.configs.firstDialogueOption[atualText];
-                interfaceManager.dialogueName.text = npcChecker.targetNPC.configs.npcName;
-                Dialogue(true);
-            }
-            else
-            {
-                atualText += 1;
+        //        atualText = 0;
+        //        interfaceManager.dialogueText.text = npcChecker.targetNPC.configs.firstDialogueOption[atualText];
+        //        interfaceManager.dialogueName.text = npcChecker.targetNPC.configs.npcName;
+        //        Dialogue(true);
+        //    }
+        //    else
+        //    {
+        //        atualText += 1;
 
-                if (atualText < npcChecker.targetNPC.configs.firstDialogueOption.Length)
-                {
-                    interfaceManager.dialogueText.text = npcChecker.targetNPC.configs.firstDialogueOption[atualText];
-                }
-                else
-                {
-                    npcChecker.targetNPC.isTalking = false;
-                    atualText = -1;
-                    npcChecker.targetNPC.interactionState = 1;
-                    npcChecker.targetNPC.canvasManager.UpdateDisplay();
-                    Dialogue(false);
-                }
-            }
-        }
-        else if (npcChecker.targetNPC.interactionState == 1)
-        {
-            npcChecker.targetNPC.SetState(new NPC_Dead(npcChecker.targetNPC));
-        }
+        //        if (atualText < npcChecker.targetNPC.configs.firstDialogueOption.Length)
+        //        {
+        //            interfaceManager.dialogueText.text = npcChecker.targetNPC.configs.firstDialogueOption[atualText];
+        //        }
+        //        else
+        //        {
+        //            npcChecker.targetNPC.isTalking = false;
+        //            atualText = -1;
+        //            npcChecker.targetNPC.interactionState = 1;
+        //            npcChecker.targetNPC.canvasManager.UpdateDisplay();
+        //            Dialogue(false);
+        //        }
+        //    }
+        //}
+        //else if (npcChecker.targetNPC.interactionState == 1)
+        //{
+        //    npcChecker.targetNPC.SetState(new NPC_Dead(npcChecker.targetNPC));
+        //}
     }
 }

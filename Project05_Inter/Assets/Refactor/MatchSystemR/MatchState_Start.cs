@@ -10,7 +10,7 @@ public class MatchState_Start : MatchState
 
     public override IEnumerator Start()
     {
-        waitTime = new WaitForSeconds(.3f);
+        waitTime = new WaitForSeconds(1f);
         Debug.Log("_Match Start_");
 
         System.StartCoroutine(System.PlayerHand.FirstDraw());

@@ -31,7 +31,6 @@ Transform:
   m_Children:
   - {fileID: 5933262192577726453}
   - {fileID: 8326455224520792081}
-  - {fileID: 3428687535215832831}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -64,7 +63,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Config: {fileID: 0}
   UIElements: {fileID: 1899554841260756442}
-  cardModel: {fileID: 2457776532732879898}
+  CardImportance: 0
+  cardModel: {fileID: 6779371420778803686}
+  gameBoard: {fileID: 0}
   cardCollider: {fileID: 6214416983912704596}
   startPosition: {x: 0, y: 0, z: 0}
   startRotation: {x: 0, y: 0, z: 0, w: 0}
@@ -95,17 +96,17 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2457776532732879898}
-  m_LocalRotation: {x: 0.7071068, y: 0, z: 0, w: 0.7071068}
+  m_LocalRotation: {x: 0.7071068, y: -0, z: -0, w: 0.7071068}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 1.4285715, y: 0.83333325, z: 100}
   m_Children:
   - {fileID: 8026339453636904582}
-  m_Father: {fileID: 447467733036680643}
-  m_RootOrder: 2
+  m_Father: {fileID: 8326455224520792081}
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 90, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 0.02}
+  m_AnchoredPosition: {x: 0, y: 2.0000007}
   m_SizeDelta: {x: 0.7, y: 1.2}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!223 &89293631245755233
@@ -525,7 +526,8 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 0.7, y: 0.01, z: 1.2}
-  m_Children: []
+  m_Children:
+  - {fileID: 3428687535215832831}
   m_Father: {fileID: 447467733036680643}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -556,7 +558,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 848390390ab9d3740bfc096a1bdda56b, type: 2}
+  - {fileID: 2100000, guid: e846fac8aa94df549ac8bb9bbb29e90d, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0

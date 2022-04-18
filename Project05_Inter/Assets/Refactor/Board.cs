@@ -6,10 +6,13 @@ public class Board : MonoBehaviour
 {
     [Header("Important Atributtes")]
     public MatchSystem Match;
+    public ToolTipBoxSystem ToolTip;
 
     [Header("Spots")]
     public List<CardSpot> PlayerSpots;
     public List<CardSpot> EnemySpots;
+    public List<string> PlayerPointsText;
+    public List<string> EnemyPointsText;
 
     #region Update Methods
 

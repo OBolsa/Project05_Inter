@@ -1,0 +1,38 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4f7ece29752c4074b8ad28af1b7c3a09, type: 3}
+  m_Name: Talk_GameTalk
+  m_EditorClassIdentifier: 
+  Subjects:
+  - Narratives:
+    - Text:
+      - "Ol\xE1! Bem vindo ao jogo de cartas."
+      - "Voc\xEA j\xE1 sabe como deve jogar?"
+      OpenOptionsBoxWhenEndNarrative: 1
+      Questions:
+      - Sim
+      - "N\xE3o"
+      EndConversationHere: 0
+    - Text:
+      - "Ent\xE3o espero que voc\xEA tenha um excelente jogo!"
+      OpenOptionsBoxWhenEndNarrative: 0
+      Questions: []
+      EndConversationHere: 1
+    - Text:
+      - "A cada round voc\xEA compra uma carta e discarta outra."
+      - "Ap\xF3s isso, voc\xEA desce uma carta em campo."
+      - "Seu objetivo \xE9 fazer mais pontos."
+      - Agora que entendeu, vamos jogar!
+      OpenOptionsBoxWhenEndNarrative: 0
+      Questions: []
+      EndConversationHere: 1
+    OpenOptionsBoxWhenEndSubject: 0

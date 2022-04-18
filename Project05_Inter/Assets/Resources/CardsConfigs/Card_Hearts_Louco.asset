@@ -13,8 +13,10 @@ MonoBehaviour:
   m_Name: Card_Hearts_Louco
   m_EditorClassIdentifier: 
   cardName: O Louco
-  cardDescription: 
+  cardDescription: "O Louco, despreocupado, s\xF3 quer curtir a vida. N\xE3o se importa
+    com nada."
   cardImage: {fileID: 0}
   cardValue: 5
+  majorArcane: 0
   cardSuit: 2
-  effects: {fileID: 0}
+  effects: {fileID: 6782159985347266556, guid: 54cafa5b6a217644bbb446866583b918, type: 3}

@@ -13,9 +13,10 @@ MonoBehaviour:
   m_Name: Card_Spades_Carro
   m_EditorClassIdentifier: 
   cardName: VII - O Carro
-  cardDescription: "Recebe pontos das cartas do naipe Espadas do advers\xE1rio."
+  cardDescription: "O advers\xE1rio perder\xE1 1 ponto para cada carta que seja de
+    um naipe diferente dessa"
   cardImage: {fileID: 0}
   cardValue: 0
   majorArcane: 1
   cardSuit: 3
-  effects: {fileID: 6782159985347266556, guid: 14581acbd957ee744a590beadccfc98d, type: 3}
+  effects: {fileID: 6782159985347266556, guid: 8f2041a98a386a74a93e1ec8cf159a9e, type: 3}

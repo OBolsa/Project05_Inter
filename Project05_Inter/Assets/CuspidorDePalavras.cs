@@ -2,7 +2,6 @@ using System.Collections;
 using System.Collections.Generic;
 using System.IO;
 using UnityEngine;
-using UnityEditor;
 
 public class CuspidorDePalavras : MonoBehaviour
 {
@@ -47,7 +46,5 @@ public class CuspidorDePalavras : MonoBehaviour
 
         writer.Write(export);
         writer.Close();
-
-        AssetDatabase.ImportAsset(path);
     }
 }

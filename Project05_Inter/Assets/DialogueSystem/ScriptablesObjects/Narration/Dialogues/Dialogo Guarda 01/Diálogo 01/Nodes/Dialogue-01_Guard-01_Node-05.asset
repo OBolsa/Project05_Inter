@@ -1,0 +1,16 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 856a2f8ea9142b9459fe209e203e2185, type: 3}
+  m_Name: Dialogue-01_Guard-01_Node-05
+  m_EditorClassIdentifier: 
+  m_DialogueLine: {fileID: 11400000, guid: db8a7363107dd2d458d6c83707eff021, type: 2}
+  m_NextNode: {fileID: 11400000, guid: b039f1ce2325c37439a315a2a5c09766, type: 2}

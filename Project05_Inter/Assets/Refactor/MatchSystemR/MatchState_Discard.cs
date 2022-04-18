@@ -14,7 +14,7 @@ public class MatchState_Discard : MatchState
         Debug.Log("_Discard");
 
         System.PlayerHand.canHighlightCard = true;
-        System.PlayerHand.canMoveCard = true;
+        System.DoFeedback("Discarte uma carta", 1f);
 
         return base.Start();
     }

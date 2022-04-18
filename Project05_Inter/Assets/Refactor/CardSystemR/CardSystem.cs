@@ -11,6 +11,7 @@ public class CardSystem : Card_StateMachineR
 
     [Header("External Scripts")]
     public GameObject cardModel;
+    public Board gameBoard;
     public Collider cardCollider;
     public IHighlightSelection highlightSelection;
     public bool IsMouseOver => MouseSelector.HitCollider() == cardCollider;
@@ -43,7 +44,7 @@ public class CardSystem : Card_StateMachineR
     private void Start()
     {
         SetState(new Card_StartR(this));
-        highlightSelection.HighlightInitialize(transform);
+        highlightSelection.HighlightInitialize(cardModel.transform);
     }
 
     private void Update()
@@ -65,9 +66,9 @@ public class CardSystem : Card_StateMachineR
     public void CardHighlight()
     {
         if (IsMouseOver && !IsSelected)
-            highlightSelection.OnHighlight(transform);
+            highlightSelection.OnHighlight(cardModel.transform);
         else
-            highlightSelection.OnDehighlight(transform);
+            highlightSelection.OnDehighlight(cardModel.transform);
     }
 
     public void StartCardMovement(Vector3 pos, Quaternion rotation, float movementTime)

@@ -55,16 +55,21 @@ public class FourthEffect : MonoBehaviour, ICardEffects
     public void OnPutCard()
     {
         gameBoard = FindObjectOfType<Board>();
-        combinations = gameBoard.Match.CombinationsConfigs;
 
-        if(gameBoard.PlayerSpots[gameBoard.Match.Round] != null)
+        if (gameBoard.PlayerSpots[gameBoard.Match.Turn].cardInThisSpot != null)
         {
-            config = gameBoard.PlayerSpots[gameBoard.Match.Round].GetComponent<CardSystem>().Config;
+            config = gameBoard.PlayerSpots[gameBoard.Match.Turn].cardInThisSpot.GetComponent<CardSystem>().Config;
             isOnPlayerBoard = true;
         }
         else
         {
+            config = gameBoard.EnemySpots[gameBoard.Match.Turn].cardInThisSpot.GetComponent<CardSystem>().Config;
             isOnPlayerBoard = false;
         }
+    }
+
+    public Board GetGameBoard()
+    {
+        return gameBoard;
     }
 }

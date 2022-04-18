@@ -12,6 +12,8 @@ public class MatchState_EnemyTurn : MatchState
     {
         waitTime = new WaitForSeconds(0.9f);
         Debug.Log("_Enemy Turn");
+        System.PlayerHand.canHighlightCard = false;
+        System.DoFeedback("Turno inimigo", 1.2f);
 
         yield return waitTime;
 

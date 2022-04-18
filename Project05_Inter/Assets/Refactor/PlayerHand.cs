@@ -7,6 +7,7 @@ public class PlayerHand : Hand
     [Header("External Atributtes")]
     public Transform _SelectCardPosition;
     public GameObject _selectedCard;
+    public Board board;
 
     [Header("Card Atributtes")]
     public bool canMoveCard;
@@ -115,6 +116,7 @@ public class PlayerHand : Hand
     {
         CardsInHand.Add(deck.TopCard);
         deck.DrawCard(transform);
+        CardsInHand[CardsInHand.Count - 1].GetComponent<CardSystem>().gameBoard = board;
         UpdateCardPosition();
     }
 

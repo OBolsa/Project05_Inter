@@ -13,9 +13,11 @@ MonoBehaviour:
   m_Name: Card_Spades_Imperatriz
   m_EditorClassIdentifier: 
   cardName: III - A Imperatriz
-  cardDescription: 
+  cardDescription: "Essa carta dobra o valor da maior carta de mesmo naipe dessa
+    em seu campo. Caso n\xE3o haja nenhuma carta dentro dos requisitos, essa carta
+    ent\xE3o concede ao jogador 2 pontos"
   cardImage: {fileID: 0}
   cardValue: 0
   majorArcane: 1
   cardSuit: 3
-  effects: {fileID: 0}
+  effects: {fileID: 6782159985347266556, guid: 9862fb0a22f97734ba0e37662e52be47, type: 3}

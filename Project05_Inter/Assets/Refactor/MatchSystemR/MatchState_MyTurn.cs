@@ -14,6 +14,7 @@ public class MatchState_MyTurn : MatchState
         Debug.Log("_My Turn");
 
         System.PlayerHand.canHighlightCard = false;
+        System.DoFeedback("Compre uma carta", 1f);
 
         yield return waitTime;
     }

@@ -12,6 +12,10 @@ public class MatchSystem : MatchSystem_StateMachine
     public Deck MainDeck;
     public Deck DiscardDeck;
     public ICombinations CombinationsConfigs;
+    public GameObject FeedbackText;
+    public WinBarController m_WinBarController;
+    [SerializeField]
+    private SceneStateMachine m_SceneStateMachine;
 
     [SerializeField] public CardSystem SelectedCard { get; private set; }
     public int Turn { get; private set; }
@@ -27,6 +31,14 @@ public class MatchSystem : MatchSystem_StateMachine
     private void Awake()
     {
         CombinationsConfigs = GetComponent<ICombinations>();
+        m_WinBarController.Needle.OnPlayerWin += m_SceneStateMachine.BackToGame;
+        m_WinBarController.Needle.OnEnemyWin += m_SceneStateMachine.BackToGame;
+    }
+
+    private void OnDestroy()
+    {
+        m_WinBarController.Needle.OnPlayerWin -= m_SceneStateMachine.BackToGame;
+        m_WinBarController.Needle.OnEnemyWin -= m_SceneStateMachine.BackToGame;
     }
 
     private void Start()
@@ -67,6 +79,18 @@ public class MatchSystem : MatchSystem_StateMachine
                 StartCoroutine(State.SelectCard());
             }
         }
+    }
+    
+    public void DoFeedback(string text, float time)
+    {
+        TMPro.TMP_Text FTText = FeedbackText.GetComponent<TMPro.TMP_Text>();
+        TweenAnimationController FTAnimator = FeedbackText.GetComponent<TweenAnimationController>();
+        CanvasGroup CG = FeedbackText.GetComponent<CanvasGroup>();
+
+        FTText.text = text;
+        CG.alpha = 0;
+        FTAnimator.StopAllCoroutines();
+        FTAnimator.StartFadeInAndFadeOut(time);
     }
 
     public void DiscardCard()
@@ -175,5 +199,13 @@ public class MatchSystem : MatchSystem_StateMachine
         PlayerPoints = 0;
         EnemyPoints = 0;
         Debug.Log("Player: " + PlayerPoints + "| Enemy: " + EnemyPoints);
+    }
+
+    public void MoveNeedle(bool playerWin)
+    {
+        if (playerWin)
+            m_WinBarController.SetNeedleInSpot(m_WinBarController.Needle.NeedleSpotInfo - 4);
+        else
+            m_WinBarController.SetNeedleInSpot(m_WinBarController.Needle.NeedleSpotInfo + 4);
     }
 }

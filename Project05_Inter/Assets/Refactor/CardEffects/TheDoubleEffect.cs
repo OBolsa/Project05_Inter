@@ -55,14 +55,20 @@ public class TheDoubleEffect : MonoBehaviour, ICardEffects
     {
         gameBoard = FindObjectOfType<Board>();
 
-        if(gameBoard.PlayerSpots[gameBoard.Match.Round] != null)
+        if (gameBoard.PlayerSpots[gameBoard.Match.Turn].cardInThisSpot != null)
         {
-            config = gameBoard.PlayerSpots[gameBoard.Match.Round].GetComponent<CardSystem>().Config;
+            config = gameBoard.PlayerSpots[gameBoard.Match.Turn].cardInThisSpot.GetComponent<CardSystem>().Config;
             isOnPlayerBoard = true;
         }
         else
         {
+            config = gameBoard.EnemySpots[gameBoard.Match.Turn].cardInThisSpot.GetComponent<CardSystem>().Config;
             isOnPlayerBoard = false;
         }
+    }
+
+    public Board GetGameBoard()
+    {
+        return gameBoard;
     }
 }

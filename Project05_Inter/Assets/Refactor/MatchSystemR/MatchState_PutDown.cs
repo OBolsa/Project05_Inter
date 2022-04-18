@@ -14,6 +14,7 @@ public class MatchState_PutDown : MatchState
         Debug.Log("_Put Down a Card");
 
         System.PlayerHand.canHighlightCard = true;
+        System.DoFeedback("Coloque uma Carta em jogo", 1f);
 
         return base.Start();
     }

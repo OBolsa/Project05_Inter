@@ -13,8 +13,10 @@ MonoBehaviour:
   m_Name: Card_Diamonds_Camponesa
   m_EditorClassIdentifier: 
   cardName: A Camponesa
-  cardDescription: 
+  cardDescription: A camponesa, inocente, segue o grupo sem saber o que o destino
+    lhe aguarda.
   cardImage: {fileID: 0}
   cardValue: 4
+  majorArcane: 0
   cardSuit: 1
-  effects: {fileID: 0}
+  effects: {fileID: 6782159985347266556, guid: 54cafa5b6a217644bbb446866583b918, type: 3}

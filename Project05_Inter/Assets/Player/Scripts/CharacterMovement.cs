@@ -61,5 +61,9 @@ public class CharacterMovement : MonoBehaviour
     private void UpdateInput()
     {
         inputDirection = movementInput.MovementInput();
+        if(inputDirection.magnitude > 0.1f)
+        {
+            transform.forward = inputDirection.normalized;
+        }
     }
 }

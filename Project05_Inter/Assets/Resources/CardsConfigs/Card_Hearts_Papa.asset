@@ -13,9 +13,10 @@ MonoBehaviour:
   m_Name: Card_Hearts_Papa
   m_EditorClassIdentifier: 
   cardName: V - O Papa
-  cardDescription: 
+  cardDescription: "Adicione aos seus pontos tamb\xE9m as cartas de de naipe igual
+    a essa do seu advers\xE1rio"
   cardImage: {fileID: 0}
   cardValue: 0
   majorArcane: 1
   cardSuit: 2
-  effects: {fileID: 0}
+  effects: {fileID: 6782159985347266556, guid: 86900f9b5d61cb04d8c59f864dcf2ea7, type: 3}

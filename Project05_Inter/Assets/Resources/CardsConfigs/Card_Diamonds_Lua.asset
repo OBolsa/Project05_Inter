@@ -18,4 +18,4 @@ MonoBehaviour:
   cardValue: 0
   majorArcane: 1
   cardSuit: 1
-  effects: {fileID: 0}
+  effects: {fileID: 6782159985347266556, guid: 746b215816594374c8b95ac2436675af, type: 3}

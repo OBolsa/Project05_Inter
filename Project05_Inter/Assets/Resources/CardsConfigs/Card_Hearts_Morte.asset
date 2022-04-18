@@ -13,8 +13,9 @@ MonoBehaviour:
   m_Name: Card_Hearts_Morte
   m_EditorClassIdentifier: 
   cardName: A Morte
-  cardDescription: 
+  cardDescription: A Morte, meticulosa, sempre vem para todos.
   cardImage: {fileID: 0}
   cardValue: 1
+  majorArcane: 0
   cardSuit: 2
-  effects: {fileID: 0}
+  effects: {fileID: 6782159985347266556, guid: 54cafa5b6a217644bbb446866583b918, type: 3}

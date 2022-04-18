@@ -25,7 +25,6 @@ public class PlayerNPCChecker : MonoBehaviour
     {
         Collider[] arround = Physics.OverlapSphere(transform.position, radiusCheck, NPCLayer);
 
-
         if (arround.Length > 0)
         {
             for (int i = 0; i < arround.Length; i++)

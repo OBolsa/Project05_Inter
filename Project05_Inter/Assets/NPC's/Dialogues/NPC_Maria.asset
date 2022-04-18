@@ -15,9 +15,4 @@ MonoBehaviour:
   npcName: Maria
   npcMaterial: {fileID: 2100000, guid: 21ca8723c11d2d34abf1e9e595b0942a, type: 2}
   walk: 1
-  firstDialogueOption:
-  - Meti o balde nela mesmo.
-  - "E ai de voc\xEA achar que eu estou errada."
-  - "N\xE3o gostou me bota no pared\xE3o."
-  secondDialogueOption: []
-  thirdDialogueOption: []
+  talk: {fileID: 11400000, guid: dd32ffd4ce882084ca952aca85b1ea34, type: 2}

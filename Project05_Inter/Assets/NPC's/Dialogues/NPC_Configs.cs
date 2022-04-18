@@ -11,7 +11,5 @@ public class NPC_Configs : ScriptableObject
     public bool walk;
 
     [Header("Dialogues")]
-    public string[] firstDialogueOption;
-    public string[] secondDialogueOption;
-    public string[] thirdDialogueOption;
+    public TalkConfig talk;
 }
