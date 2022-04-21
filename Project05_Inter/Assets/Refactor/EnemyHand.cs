@@ -120,11 +120,13 @@ public class EnemyHand : Hand
             }
         }
 
-        //passingScore /= 2;
+        passingScore = 3;
 
         for (int i = 0; i < CardsInHand.Count; i++)
         {
-            if (CardsInHand[i].GetComponent<CardSystem>().CardImportance >= passingScore)
+            CardSystem card = CardsInHand[i].GetComponent<CardSystem>();
+
+            if (card.CardImportance > 0 && card.CardImportance < 4)
                 mostImportantCardsIndex.Add(i);
             else
                 lessImportantCardsIndex.Add(i);

@@ -56,6 +56,9 @@ public class DialogueSequencer
     {
         if (CanStartNode(node))
         {
+            if(m_CurrentNode != null)
+                m_CurrentNode.EndNode();
+
             StopDialogueNode(m_CurrentNode);
 
             m_CurrentNode = node;

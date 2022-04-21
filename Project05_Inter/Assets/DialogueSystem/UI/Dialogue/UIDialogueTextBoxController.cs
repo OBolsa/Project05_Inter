@@ -55,7 +55,6 @@ public class UIDialogueTextBoxController : MonoBehaviour, IDialogueNodeVisitor
         }
         else
         {
-            node.EndNode();
             OnDialogueNodeEnd(node);
         }
 

@@ -204,8 +204,8 @@ public class MatchSystem : MatchSystem_StateMachine
     public void MoveNeedle(bool playerWin)
     {
         if (playerWin)
-            m_WinBarController.SetNeedleInSpot(m_WinBarController.Needle.NeedleSpotInfo - 4);
+            m_WinBarController.SetNeedleInSpot(m_WinBarController.Needle.NeedleSpotInfo - 2);
         else
-            m_WinBarController.SetNeedleInSpot(m_WinBarController.Needle.NeedleSpotInfo + 4);
+            m_WinBarController.SetNeedleInSpot(m_WinBarController.Needle.NeedleSpotInfo + 2);
     }
 }

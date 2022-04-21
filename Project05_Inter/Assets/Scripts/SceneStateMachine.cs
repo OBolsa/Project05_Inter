@@ -32,9 +32,11 @@ public class SceneStateMachine : MonoBehaviour
         eventSystem.enabled = true;
 
         if (SceneManager.GetActiveScene().name != "MatchScene")
-            SceneController.Instance.ChangeScene(scene, LoadSceneMode.Additive);
+            SceneController.Instance.ChangeScene(scene, LoadSceneMode.Single);
         else
             SceneManager.UnloadSceneAsync(SceneManager.GetActiveScene().name);
+            //SceneController.Instance.ChangeScene("MatchScene", LoadSceneMode.Additive);
+            //SceneManager.UnloadScene(SceneManager.GetActiveScene());
     }
 
     public void BackToGame()
