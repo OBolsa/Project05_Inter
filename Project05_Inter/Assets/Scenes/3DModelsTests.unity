@@ -210,11 +210,11 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 465598118}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 135.55, y: 78.66, z: 143.24}
+  m_LocalPosition: {x: 135.55, y: 74, z: 143}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 4
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &641970330
 GameObject:
@@ -332,6 +332,63 @@ MonoBehaviour:
   m_RequiresDepthTexture: 0
   m_RequiresColorTexture: 0
   m_Version: 2
+--- !u!1001 &698945866
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: -8679921383154817045, guid: 3e89512b71ce1514a87013f23ee42857, type: 3}
+      propertyPath: m_RootOrder
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 3e89512b71ce1514a87013f23ee42857, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 137.37605
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 3e89512b71ce1514a87013f23ee42857, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 74.11693
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 3e89512b71ce1514a87013f23ee42857, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 154.81325
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 3e89512b71ce1514a87013f23ee42857, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 3e89512b71ce1514a87013f23ee42857, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 3e89512b71ce1514a87013f23ee42857, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 3e89512b71ce1514a87013f23ee42857, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 3e89512b71ce1514a87013f23ee42857, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 3e89512b71ce1514a87013f23ee42857, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 3e89512b71ce1514a87013f23ee42857, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 3e89512b71ce1514a87013f23ee42857, type: 3}
+      propertyPath: m_Name
+      value: teste parede lisa com janela (1)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 3e89512b71ce1514a87013f23ee42857, type: 3}
 --- !u!1 &722058074
 GameObject:
   m_ObjectHideFlags: 0
@@ -426,7 +483,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 5
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &731480066
 GameObject:
@@ -519,7 +576,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 3
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 50, y: -30, z: 0}
 --- !u!1 &926959218
 GameObject:
@@ -602,6 +659,63 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 926959218}
   m_Mesh: {fileID: -5846288643327304427, guid: 171d121a60657a54fb48f418f8192e6c, type: 3}
+--- !u!1001 &1023826601
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: -8679921383154817045, guid: 3e89512b71ce1514a87013f23ee42857, type: 3}
+      propertyPath: m_RootOrder
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 3e89512b71ce1514a87013f23ee42857, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 137.67729
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 3e89512b71ce1514a87013f23ee42857, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 73.68279
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 3e89512b71ce1514a87013f23ee42857, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 149.8787
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 3e89512b71ce1514a87013f23ee42857, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 3e89512b71ce1514a87013f23ee42857, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 3e89512b71ce1514a87013f23ee42857, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 3e89512b71ce1514a87013f23ee42857, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 3e89512b71ce1514a87013f23ee42857, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 3e89512b71ce1514a87013f23ee42857, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 3e89512b71ce1514a87013f23ee42857, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 3e89512b71ce1514a87013f23ee42857, type: 3}
+      propertyPath: m_Name
+      value: teste parede lisa com janela (2)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 3e89512b71ce1514a87013f23ee42857, type: 3}
 --- !u!1001 &1040044442
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -765,7 +879,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: 171d121a60657a54fb48f418f8192e6c, type: 3}
       propertyPath: m_RootOrder
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 171d121a60657a54fb48f418f8192e6c, type: 3}
       propertyPath: m_LocalScale.x
@@ -789,7 +903,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 171d121a60657a54fb48f418f8192e6c, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 139.39
+      value: 138.86064
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 171d121a60657a54fb48f418f8192e6c, type: 3}
       propertyPath: m_LocalRotation.w
