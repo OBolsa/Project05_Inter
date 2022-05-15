@@ -18,7 +18,6 @@ public class WinBarController : MonoBehaviour
         SetNeedleInSpot(m_CenterSpot);
     }
 
-    [ContextMenu("Do Move")]
     public void SetNeedleInSpot(int newPosition)
     {
         Vector3 needleNewPosition = m_NeedleSpots[newPosition].transform.position;

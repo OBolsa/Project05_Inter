@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Events;
 
 public class NeedleScript : MonoBehaviour
 {
@@ -18,9 +19,13 @@ public class NeedleScript : MonoBehaviour
     private float m_PercentageComplete;
     private bool m_IsInMovement;
 
-    public delegate void MatchEndCallBack();
-    public MatchEndCallBack OnPlayerWin;
-    public MatchEndCallBack OnEnemyWin;
+    public UnityEvent MatchStart;
+    public UnityEvent MatchEnd;
+
+    private void Start()
+    {
+        MatchStart?.Invoke();
+    }
 
     void Update()
     {
@@ -72,13 +77,9 @@ public class NeedleScript : MonoBehaviour
 
     public void CheckWinner()
     {
-        if (m_NeedleSpotInfo == 0)
+        if (m_NeedleSpotInfo == 0 || m_NeedleSpotInfo == 8)
         {
-            OnPlayerWin?.Invoke();
-        }
-        else if (m_NeedleSpotInfo == 8)
-        {
-            OnEnemyWin?.Invoke();
+            MatchEnd?.Invoke();
         }
         else
         {

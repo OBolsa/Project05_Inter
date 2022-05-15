@@ -18,10 +18,10 @@ MonoBehaviour:
   m_OnEndNode:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 4355907026821987129, guid: f4f2799d748ce3c48a0c8d1f44a3e14d, type: 3}
-        m_TargetAssemblyTypeName: SceneStateMachine, Assembly-CSharp
-        m_MethodName: ChangeScene
-        m_Mode: 5
+      - m_Target: {fileID: 11400000, guid: cb2336ff40369d04a8c1b949781ee8ba, type: 2}
+        m_TargetAssemblyTypeName: MatchChannel, Assembly-CSharp
+        m_MethodName: RaiseMatchStart
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine

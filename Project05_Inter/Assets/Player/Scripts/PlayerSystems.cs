@@ -22,39 +22,6 @@ public class PlayerSystems : PlayerStateMachine
 
     private void Update()
     {
-        //bool haveNpc = npcChecker.targetNPC != null;
-        //bool isADiferentNpc = npcChecker.targetNPC.gameObject != atualInteractedNPC;
-
-        //if (haveNpc)
-        //{
-        //    if (isADiferentNpc)
-        //    {
-        //        atualText = -1;
-        //        interfaceManager.dialogueText.text = "";
-
-        //        if (atualInteractedNPC != null)
-        //            atualInteractedNPC.GetComponent<NPCSystem>().isTalking = false;
-
-        //        Dialogue(false);
-        //    }
-
-        //    if (Input.GetKeyDown(KeyCode.G))
-        //    {
-        //        State.Interact();
-        //    }
-
-        //}
-        //else
-        //{
-        //    atualText = -1;
-        //    interfaceManager.dialogueText.text = "";
-
-        //    if(atualInteractedNPC != null)
-        //        atualInteractedNPC.GetComponent<NPCSystem>().isTalking = false;
-
-        //    Dialogue(false);
-        //}
-
         if (pMovement.IsMoving)
             State.Move();
     }
@@ -71,43 +38,5 @@ public class PlayerSystems : PlayerStateMachine
         }
 
         interfaceManager.dialogueObject.SetActive(condition);
-    }
-
-    public void DialogueController()
-    {
-        //if(npcChecker.targetNPC.interactionState == 0)
-        //{
-        //    if (atualText == -1)
-        //    {
-        //        npcChecker.targetNPC.StopMove();
-        //        npcChecker.targetNPC.isTalking = true;
-
-        //        atualText = 0;
-        //        interfaceManager.dialogueText.text = npcChecker.targetNPC.configs.firstDialogueOption[atualText];
-        //        interfaceManager.dialogueName.text = npcChecker.targetNPC.configs.npcName;
-        //        Dialogue(true);
-        //    }
-        //    else
-        //    {
-        //        atualText += 1;
-
-        //        if (atualText < npcChecker.targetNPC.configs.firstDialogueOption.Length)
-        //        {
-        //            interfaceManager.dialogueText.text = npcChecker.targetNPC.configs.firstDialogueOption[atualText];
-        //        }
-        //        else
-        //        {
-        //            npcChecker.targetNPC.isTalking = false;
-        //            atualText = -1;
-        //            npcChecker.targetNPC.interactionState = 1;
-        //            npcChecker.targetNPC.canvasManager.UpdateDisplay();
-        //            Dialogue(false);
-        //        }
-        //    }
-        //}
-        //else if (npcChecker.targetNPC.interactionState == 1)
-        //{
-        //    npcChecker.targetNPC.SetState(new NPC_Dead(npcChecker.targetNPC));
-        //}
     }
 }

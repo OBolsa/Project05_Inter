@@ -19,6 +19,6 @@ public class PlayerState_Idle : PlayerState
 
     public override void Interact()
     {
-        Player.DialogueController();
+        
     }
 }

@@ -20,6 +20,6 @@ public class PlayerState_Walk : PlayerState
 
     public override void Interact()
     {
-        Player.DialogueController();
+        
     }
 }

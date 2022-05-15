@@ -7,6 +7,7 @@ public class CharacterMovement : MonoBehaviour
     [Header("Character Movement")]
     public float characterSpeed;
     public bool IsMoving { get { return inputDirection.magnitude > 0.1f; } }
+    private bool canMove;
     private Vector3 inputDirection;
     private CharacterController controller;
     private ICharacterMovementInput movementInput;
@@ -31,7 +32,8 @@ public class CharacterMovement : MonoBehaviour
         UpdateInput();
         inputDirection *= characterSpeed;
 
-        controller.Move(inputDirection * Time.deltaTime);
+        if(canMove)
+            controller.Move(inputDirection * Time.deltaTime);
     }
 
     public void DoMovement(float moveSpeed)
@@ -39,8 +41,15 @@ public class CharacterMovement : MonoBehaviour
         UpdateInput();
         inputDirection *= moveSpeed;
 
-        controller.Move(inputDirection * Time.deltaTime);
+        if(canMove)
+            controller.Move(inputDirection * Time.deltaTime);
     }
+
+    public void SetMove(bool can)
+    {
+        canMove = can;
+    }
+
 
     private void DoGravity()
     {

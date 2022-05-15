@@ -5428,6 +5428,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2e30aa488b3ffca4fbdc21b83f781210, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  m_MatchChannel: {fileID: 11400000, guid: cb2336ff40369d04a8c1b949781ee8ba, type: 2}
+  m_GameState: 1
 --- !u!4 &1977813087
 Transform:
   m_ObjectHideFlags: 0
@@ -6302,6 +6304,62 @@ PrefabInstance:
     - target: {fileID: 116735325156747894, guid: d18c30096073d124cb0800276c36c34b, type: 3}
       propertyPath: m_AnimationSpeed
       value: 0.3
+      objectReference: {fileID: 0}
+    - target: {fileID: 116735325156747894, guid: d18c30096073d124cb0800276c36c34b, type: 3}
+      propertyPath: MatchEnd.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 116735325156747894, guid: d18c30096073d124cb0800276c36c34b, type: 3}
+      propertyPath: MatchStart.m_PersistentCalls.m_Calls.Array.size
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 116735325156747894, guid: d18c30096073d124cb0800276c36c34b, type: 3}
+      propertyPath: MatchEnd.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 116735325156747894, guid: d18c30096073d124cb0800276c36c34b, type: 3}
+      propertyPath: MatchEnd.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 11400000, guid: cb2336ff40369d04a8c1b949781ee8ba, type: 2}
+    - target: {fileID: 116735325156747894, guid: d18c30096073d124cb0800276c36c34b, type: 3}
+      propertyPath: MatchStart.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 116735325156747894, guid: d18c30096073d124cb0800276c36c34b, type: 3}
+      propertyPath: MatchStart.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 11400000, guid: cb2336ff40369d04a8c1b949781ee8ba, type: 2}
+    - target: {fileID: 116735325156747894, guid: d18c30096073d124cb0800276c36c34b, type: 3}
+      propertyPath: MatchEnd.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 116735325156747894, guid: d18c30096073d124cb0800276c36c34b, type: 3}
+      propertyPath: MatchEnd.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: RaiseMatchEnd
+      objectReference: {fileID: 0}
+    - target: {fileID: 116735325156747894, guid: d18c30096073d124cb0800276c36c34b, type: 3}
+      propertyPath: MatchStart.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 116735325156747894, guid: d18c30096073d124cb0800276c36c34b, type: 3}
+      propertyPath: MatchStart.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: RaiseMatchStart
+      objectReference: {fileID: 0}
+    - target: {fileID: 116735325156747894, guid: d18c30096073d124cb0800276c36c34b, type: 3}
+      propertyPath: MatchEnd.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: MatchChannel, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 116735325156747894, guid: d18c30096073d124cb0800276c36c34b, type: 3}
+      propertyPath: MatchStart.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: MatchChannel, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 116735325156747894, guid: d18c30096073d124cb0800276c36c34b, type: 3}
+      propertyPath: MatchEnd.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 116735325156747894, guid: d18c30096073d124cb0800276c36c34b, type: 3}
+      propertyPath: MatchStart.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
     - target: {fileID: 4814784369734584636, guid: d18c30096073d124cb0800276c36c34b, type: 3}
       propertyPath: m_RootOrder

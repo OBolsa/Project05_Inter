@@ -10,7 +10,7 @@ public enum CardSuits
     Spades
 }
 
-[CreateAssetMenu(fileName = "Card_Name_Suit", menuName = "Scriptable Object/Create New/Card")]
+[CreateAssetMenu(fileName = "Card_Name_Suit", menuName = "Scriptable Objects/Card")]
 public class CardConfig : ScriptableObject
 {
     [Header("Card Main Atributtes")]

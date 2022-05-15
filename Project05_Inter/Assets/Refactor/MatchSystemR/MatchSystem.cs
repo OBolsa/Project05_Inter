@@ -31,14 +31,10 @@ public class MatchSystem : MatchSystem_StateMachine
     private void Awake()
     {
         CombinationsConfigs = GetComponent<ICombinations>();
-        m_WinBarController.Needle.OnPlayerWin += m_SceneStateMachine.BackToGame;
-        m_WinBarController.Needle.OnEnemyWin += m_SceneStateMachine.BackToGame;
     }
 
     private void OnDestroy()
     {
-        m_WinBarController.Needle.OnPlayerWin -= m_SceneStateMachine.BackToGame;
-        m_WinBarController.Needle.OnEnemyWin -= m_SceneStateMachine.BackToGame;
     }
 
     private void Start()

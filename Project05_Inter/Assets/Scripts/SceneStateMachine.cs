@@ -3,12 +3,31 @@ using UnityEngine;
 using UnityEngine.EventSystems;
 using UnityEngine.SceneManagement;
 
+public enum GameStates
+{
+    Overworld,
+    Match,
+    Menu
+}
+
 public class SceneStateMachine : MonoBehaviour
 {
+    [SerializeField]
+    private MatchChannel m_MatchChannel;
+    [SerializeField]
+    private GameStates m_GameState;
+
     private void Awake()
     {
         SceneManager.sceneLoaded += OnSceneLoaded;
+        m_MatchChannel.OnMatchStart += GoToMatch;
+        m_MatchChannel.OnMatchEnd += BackToGame;
+    }
 
+    private void OnDestroy()
+    {
+        m_MatchChannel.OnMatchStart -= GoToMatch;
+        m_MatchChannel.OnMatchEnd -= BackToGame;
     }
 
     void OnSceneLoaded(Scene scene, LoadSceneMode mode)
@@ -39,8 +58,23 @@ public class SceneStateMachine : MonoBehaviour
             //SceneManager.UnloadScene(SceneManager.GetActiveScene());
     }
 
+    public void GoToMatch()
+    {
+        switch (m_GameState)
+        {
+            case GameStates.Overworld:
+                ChangeScene("MatchScene");
+                break;
+        }
+    }
+
     public void BackToGame()
     {
-        ChangeScene("TestsScene01");
+        switch (m_GameState)
+        {
+            case GameStates.Match:
+                ChangeScene("TestsScene01");
+                break;
+        }
     }
 }
