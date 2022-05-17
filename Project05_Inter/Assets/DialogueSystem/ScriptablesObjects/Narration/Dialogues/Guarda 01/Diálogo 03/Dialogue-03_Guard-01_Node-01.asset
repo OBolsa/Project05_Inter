@@ -9,9 +9,24 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 856a2f8ea9142b9459fe209e203e2185, type: 3}
+  m_Script: {fileID: 11500000, guid: e5aa8de72a3959042a97c09cae1cfd9c, type: 3}
   m_Name: Dialogue-03_Guard-01_Node-01
   m_EditorClassIdentifier: 
   m_DialogueLine: {fileID: 11400000, guid: b0527ba9ad4b8844fb8a54b79872bd84, type: 2}
   m_QuestNode: {fileID: 0}
   m_NextNode: {fileID: 0}
+  m_OnEndNode:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 11400000, guid: fabda639ff8706245b8be9acc312bbf9, type: 2}
+        m_TargetAssemblyTypeName: DoorChannel, Assembly-CSharp
+        m_MethodName: OpenDoor
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 1
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2

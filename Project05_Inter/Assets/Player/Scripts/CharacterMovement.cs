@@ -75,4 +75,11 @@ public class CharacterMovement : MonoBehaviour
             transform.forward = inputDirection.normalized;
         }
     }
+
+    public void DoTeleport(Transform telepPosition)
+    {
+        controller.enabled = false;
+        transform.position = telepPosition.position;
+        controller.enabled = true;
+    }
 }

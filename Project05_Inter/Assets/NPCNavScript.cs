@@ -26,7 +26,7 @@ public class NPCNavScript : MonoBehaviour
 
     private void Update()
     {
-        if(m_Sequencer.CurrentSpot.SpotPosition != null)
+        if(m_Sequencer.CurrentSpot.SpotPosition != null && m_NavMeshAgent.enabled)
             m_NavMeshAgent.destination = m_Sequencer.CurrentSpot.SpotPosition;
 
         CheckMovement();
@@ -45,7 +45,7 @@ public class NPCNavScript : MonoBehaviour
 
     public void CheckMovement()
     {
-        if(Vector3.Distance(transform.position, m_NavMeshAgent.destination) < 0.1f && !m_ReachSpot)
+        if(Vector3.Distance(transform.position, m_NavMeshAgent.destination) < 0.1f && !m_ReachSpot && m_NavMeshAgent.enabled)
         {
             m_ReachSpot = true;
             StartCoroutine(WaitForNextSpot(m_Sequencer.CurrentSpot.SecondsInSpot));

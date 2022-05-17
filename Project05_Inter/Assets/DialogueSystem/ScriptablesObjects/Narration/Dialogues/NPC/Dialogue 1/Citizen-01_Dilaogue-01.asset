@@ -10,6 +10,6 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: f24f469bd406c2943aa1b42e4435b922, type: 3}
-  m_Name: Dialogue-03_Guard-01
+  m_Name: Citizen-01_Dilaogue-01
   m_EditorClassIdentifier: 
-  m_FirstNode: {fileID: 11400000, guid: e35aa38a735a3c14bb2d86f4755eff88, type: 2}
+  m_FirstNode: {fileID: 11400000, guid: a9a1816047b841b4bbb62536b3e39aba, type: 2}

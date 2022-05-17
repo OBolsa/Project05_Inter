@@ -10,6 +10,6 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: f24f469bd406c2943aa1b42e4435b922, type: 3}
-  m_Name: Dialogue-03_Guard-01
+  m_Name: Church-01_Dialogue-01
   m_EditorClassIdentifier: 
-  m_FirstNode: {fileID: 11400000, guid: e35aa38a735a3c14bb2d86f4755eff88, type: 2}
+  m_FirstNode: {fileID: 11400000, guid: 372be6141a28bb84ea180ee717b87bcc, type: 2}
