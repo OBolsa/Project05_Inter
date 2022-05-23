@@ -9,7 +9,7 @@ Material:
   m_PrefabAsset: {fileID: 0}
   m_Name: Pilastra Pedra Vertical
   m_Shader: {fileID: 4800000, guid: 933532a4fcc9baf4fa0491de14d08ed7, type: 3}
-  m_ShaderKeywords: _DETAIL_MULX2 _NORMALMAP _OCCLUSIONMAP
+  m_ShaderKeywords: _DETAIL_MULX2 _NORMALMAP _OCCLUSIONMAP _PARALLAXMAP
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 0
@@ -21,23 +21,23 @@ Material:
     serializedVersion: 3
     m_TexEnvs:
     - _BaseMap:
-        m_Texture: {fileID: 2800000, guid: 60f109816806e2c40b779607a5cb413c, type: 3}
+        m_Texture: {fileID: 2800000, guid: 45126efdd99f8f5448539ddb6016c772, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _BumpMap:
-        m_Texture: {fileID: 2800000, guid: f357f07fc4b19164abe87a5548296b63, type: 3}
+        m_Texture: {fileID: 2800000, guid: 776161d475e65ed4398e4e88a849a97a, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _DetailAlbedoMap:
-        m_Texture: {fileID: 2800000, guid: 60f109816806e2c40b779607a5cb413c, type: 3}
+        m_Texture: {fileID: 2800000, guid: 45126efdd99f8f5448539ddb6016c772, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _DetailMask:
-        m_Texture: {fileID: 2800000, guid: d35c1a75f86ffd34782df58cd350df21, type: 3}
+        m_Texture: {fileID: 2800000, guid: e46829df26b4dd44eb3e61734ffd234a, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _DetailNormalMap:
-        m_Texture: {fileID: 2800000, guid: f357f07fc4b19164abe87a5548296b63, type: 3}
+        m_Texture: {fileID: 2800000, guid: 776161d475e65ed4398e4e88a849a97a, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _EmissionMap:
@@ -45,7 +45,7 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _MainTex:
-        m_Texture: {fileID: 2800000, guid: 60f109816806e2c40b779607a5cb413c, type: 3}
+        m_Texture: {fileID: 2800000, guid: 45126efdd99f8f5448539ddb6016c772, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _MetallicGlossMap:
@@ -53,11 +53,11 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _OcclusionMap:
-        m_Texture: {fileID: 2800000, guid: d35c1a75f86ffd34782df58cd350df21, type: 3}
+        m_Texture: {fileID: 2800000, guid: e46829df26b4dd44eb3e61734ffd234a, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _ParallaxMap:
-        m_Texture: {fileID: 0}
+        m_Texture: {fileID: 2800000, guid: e46829df26b4dd44eb3e61734ffd234a, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _SpecGlossMap:
