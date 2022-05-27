@@ -6,7 +6,8 @@ namespace Tween
 { 
     public class TweenAnimation : MonoBehaviour
     {
-        private float desiredTime = 0f;
+        [SerializeField]
+        private float m_AnimationTime = 0.3f;
         private float enlapsedTime = 0f;
         private float percentageComplete = 0f;
         private bool doTween = false;
@@ -30,7 +31,7 @@ namespace Tween
             if (doTween)
             {
                 enlapsedTime += Time.deltaTime;
-                percentageComplete = enlapsedTime / desiredTime;
+                percentageComplete = enlapsedTime / m_AnimationTime;
 
                 transform.SetPositionAndRotation(Vector3.Lerp(InitialPosition, TargetPosition, Mathf.SmoothStep(0, 1, percentageComplete)), Quaternion.Lerp(InitialRotation, TargetRotation, Mathf.SmoothStep(0, 1, percentageComplete)));
                 transform.localScale = Vector3.Lerp(InitialScale, TargetScale, Mathf.SmoothStep(0, 1, percentageComplete));
@@ -42,45 +43,42 @@ namespace Tween
                     InitialScale = Vector3.zero;
                     TargetScale = Vector3.zero;
                     enlapsedTime = 0f;
-                    desiredTime = 0f;
                     doTween = false;
                 }
             }
         }
 
-        public void StartMovement(float timeInSeconds, Vector3 desiredPos)
+        public void StartMovement(Transform desiredPos)
         {
             InitialPosition = transform.position;
             InitialRotation = transform.rotation;
             InitialScale = transform.localScale;
 
-            TargetPosition = desiredPos;
+            TargetPosition = desiredPos.position;
             TargetRotation = transform.rotation;
             TargetScale = transform.localScale;
 
             enlapsedTime = 0f;
-            desiredTime = timeInSeconds;
             doTween = true;
             conditionToEnd = transform.position == TargetPosition;
         }
 
-        public void StartRotation(float timeInSeconds, Quaternion desiredRot)
+        public void StartRotation(Transform desiredRot)
         {
             InitialPosition = transform.position;
             InitialRotation = transform.rotation;
             InitialScale = transform.localScale;
 
             TargetPosition = transform.position;
-            TargetRotation = desiredRot;
+            TargetRotation = desiredRot.rotation;
             TargetScale = transform.localScale;
 
             enlapsedTime = 0f;
-            desiredTime = timeInSeconds;
             doTween = true;
             conditionToEnd = transform.rotation == TargetRotation;
         }
 
-        public void StartScale(float timeInSeconds, Vector3 desiredScale)
+        public void StartScale(Transform desiredScale)
         {
             InitialPosition = transform.position;
             InitialRotation = transform.rotation;
@@ -88,15 +86,14 @@ namespace Tween
 
             TargetPosition = transform.position;
             TargetRotation = transform.rotation;
-            TargetScale = desiredScale;
+            TargetScale = desiredScale.localScale;
 
             enlapsedTime = 0f;
-            desiredTime = timeInSeconds;
             doTween = true;
             conditionToEnd = transform.localScale == TargetScale;
         }
 
-        public void StartMovementAndRotation(float timeInSeconds, Vector3 desiredPos, Quaternion desiredRot)
+        public void StartMovementAndRotation(Vector3 desiredPos, Quaternion desiredRot)
         {
             InitialPosition = transform.position;
             InitialRotation = transform.rotation;
@@ -107,12 +104,11 @@ namespace Tween
             TargetScale = transform.localScale;
 
             enlapsedTime = 0f;
-            desiredTime = timeInSeconds;
             doTween = true;
             conditionToEnd = transform.position == TargetPosition && transform.rotation == TargetRotation;
         }
 
-        public void StartMovementAndScale(float timeInSeconds, Vector3 desiredPos, Vector3 desiredScale)
+        public void StartMovementAndScale(Vector3 desiredPos, Vector3 desiredScale)
         {
             InitialPosition = transform.position;
             InitialRotation = transform.rotation;
@@ -123,12 +119,11 @@ namespace Tween
             TargetScale = desiredScale;
 
             enlapsedTime = 0f;
-            desiredTime = timeInSeconds;
             doTween = true;
             conditionToEnd = transform.position == TargetPosition && transform.localScale == TargetScale;
         }
 
-        public void StartRotationAndScale(float timeInSeconds, Vector3 desiredScale, Quaternion desiredRot)
+        public void StartRotationAndScale(Vector3 desiredScale, Quaternion desiredRot)
         {
             InitialPosition = transform.position;
             InitialRotation = transform.rotation;
@@ -139,12 +134,11 @@ namespace Tween
             TargetScale = desiredScale;
 
             enlapsedTime = 0f;
-            desiredTime = timeInSeconds;
             doTween = true;
             conditionToEnd = transform.localScale == TargetScale && transform.rotation == TargetRotation;
         }
 
-        public void StartMovementRotationAndScale(float timeInSeconds, Vector3 desiredPos, Vector3 desiredScale, Quaternion desiredRot)
+        public void StartMovementRotationAndScale(Vector3 desiredPos, Vector3 desiredScale, Quaternion desiredRot)
         {
             InitialPosition = transform.position;
             InitialRotation = transform.rotation;
@@ -155,7 +149,6 @@ namespace Tween
             TargetScale = desiredScale;
 
             enlapsedTime = 0f;
-            desiredTime = timeInSeconds;
             doTween = true;
             conditionToEnd = transform.position == TargetPosition && transform.localScale == TargetScale && transform.rotation == TargetRotation;
         }
