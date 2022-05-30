@@ -11,6 +11,10 @@ public class CharacterMovement : MonoBehaviour
     private Vector3 inputDirection;
     private CharacterController controller;
     private ICharacterMovementInput movementInput;
+    [SerializeField]
+    private AudioClip m_MovementSound;
+    [SerializeField]
+    private AudioChannel m_AudioChannel;
 
     [Header("Gravity System")]
     public float gravityScale;
@@ -32,8 +36,10 @@ public class CharacterMovement : MonoBehaviour
         UpdateInput();
         inputDirection *= characterSpeed;
 
-        if(canMove)
+        if (canMove)
+        {
             controller.Move(inputDirection * Time.deltaTime);
+        }
     }
 
     public void DoMovement(float moveSpeed)
@@ -41,8 +47,10 @@ public class CharacterMovement : MonoBehaviour
         UpdateInput();
         inputDirection *= moveSpeed;
 
-        if(canMove)
+        if (canMove)
+        {
             controller.Move(inputDirection * Time.deltaTime);
+        }
     }
 
     public void SetMove(bool can)
@@ -73,6 +81,7 @@ public class CharacterMovement : MonoBehaviour
         if(inputDirection.magnitude > 0.1f)
         {
             transform.forward = inputDirection.normalized;
+            m_AudioChannel.RequestAudio(m_MovementSound);
         }
     }
 

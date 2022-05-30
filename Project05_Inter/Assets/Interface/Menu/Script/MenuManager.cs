@@ -25,6 +25,11 @@ public class MenuManager : MonoBehaviour
         StartCoroutine(GoToSceneCoroutine(scene));
     }
 
+    public void SetSceneState(string state)
+    {
+        m_MenuChannel.RaiseMenuState(state);
+    }
+
     private IEnumerator GoToSceneCoroutine(string scene)
     {
         m_MenuChannel.RaiseMenuState("Game");

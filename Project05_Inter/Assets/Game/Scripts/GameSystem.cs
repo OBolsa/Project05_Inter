@@ -15,7 +15,7 @@ public class GameSystem : GameStateMachine
     {
         if (Input.GetKeyDown(KeyCode.Escape))
         {
-            State.Pause();
+            //State.Pause();
         }
     }
 }
