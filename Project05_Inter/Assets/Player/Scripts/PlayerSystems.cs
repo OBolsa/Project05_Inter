@@ -1,8 +1,8 @@
-using System.Collections;
-using System.Collections.Generic;
+using System;
 using UnityEngine;
+using SaveSystem;
 
-public class PlayerSystems : PlayerStateMachine
+public class PlayerSystems : PlayerStateMachine, ISaveable
 {
     [Header("Player Atributes")]
     public Rigidbody rb;
@@ -38,5 +38,38 @@ public class PlayerSystems : PlayerStateMachine
         }
 
         interfaceManager.dialogueObject.SetActive(condition);
+    }
+
+    public object CaptureState()
+    {
+        return new SaveData
+        {
+            xPos = transform.position.x,
+            yPos = transform.position.y,
+            zPos = transform.position.z,
+            xRot = transform.rotation.x,
+            yRot = transform.rotation.y,
+            zRot = transform.rotation.z
+        };
+    }
+
+    public void RestoreState(object state)
+    {
+        var savedData = (SaveData)state;
+
+        GetComponent<CharacterController>().enabled = false;
+        transform.SetPositionAndRotation(new Vector3(savedData.xPos, savedData.yPos, savedData.zPos), Quaternion.Euler(savedData.xRot, savedData.yRot, savedData.zRot));
+        GetComponent<CharacterController>().enabled = true;
+    }
+
+    [Serializable]
+    private struct SaveData
+    {
+        public float xPos;
+        public float yPos;
+        public float zPos;
+        public float xRot;
+        public float yRot;
+        public float zRot;
     }
 }

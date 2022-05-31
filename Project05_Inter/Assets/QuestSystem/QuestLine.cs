@@ -1,5 +1,6 @@
 using UnityEngine;
 
+[System.Serializable]
 [CreateAssetMenu(menuName = "Scriptable Objects/Quest/QuestLine")]
 public class QuestLine : ScriptableObject
 {

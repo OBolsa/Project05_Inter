@@ -1,7 +1,9 @@
+using System;
 using System.Collections.Generic;
 using UnityEngine;
+using SaveSystem;
 
-public class PlayerQuestsManager : MonoBehaviour
+public class PlayerQuestsManager : MonoBehaviour, ISaveable
 {
     [SerializeField]
     public List<QuestData> PlayerQuestData = new List<QuestData>();
@@ -92,5 +94,26 @@ public class PlayerQuestsManager : MonoBehaviour
     public void CompleteQuest(QuestLine quest)
     {
         QuestByQuestID(quest).IsCompleted = true;
+    }
+
+    public object CaptureState()
+    {
+        return new SaveData
+        {
+            playerQuests = PlayerQuestData
+        };
+    }
+
+    public void RestoreState(object state)
+    {
+        var savedData = (SaveData)state;
+
+        PlayerQuestData = savedData.playerQuests;
+    }
+
+    [Serializable]
+    private struct SaveData
+    {
+        public List<QuestData> playerQuests;
     }
 }

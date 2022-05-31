@@ -27,7 +27,7 @@ public class QuestInstigator : MonoBehaviour
 
         if(!PlayerQuestsManager.HaveQuest(dialogue.FirstNode.QuestNode.QuestLine) && PlayerQuestsManager.CanStartThisQuest(dialogue.FirstNode.QuestNode.QuestLine))
         {
-            PlayerQuestsManager.PlayerQuestData.Add(new QuestData(dialogue.FirstNode.QuestNode.QuestLine));
+            PlayerQuestsManager.PlayerQuestData.Add(new QuestData(dialogue.FirstNode.QuestNode.QuestLine.QuestLineID));
         }
         else if (PlayerQuestsManager.HaveQuest(dialogue.FirstNode.QuestNode.QuestLine) && PlayerQuestsManager.CanStartThisNode(dialogue.FirstNode.QuestNode))
         {

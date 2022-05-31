@@ -3,17 +3,15 @@ using UnityEngine;
 [System.Serializable]
 public class QuestData
 {
-    private QuestLine m_questLine;
-
-    public QuestLine QuestLine => m_questLine;
-    public string QuestID => m_questLine.QuestLineID;
+    private string m_QuestID;
+    public string QuestID => m_QuestID;
 
     public int CurrentQuestStep;
     public bool IsCompleted;
 
-    public QuestData(QuestLine quest)
+    public QuestData(string questId)
     {
-        m_questLine = quest;
+        m_QuestID = questId;
         CurrentQuestStep = 0;
         IsCompleted = false;
     }
