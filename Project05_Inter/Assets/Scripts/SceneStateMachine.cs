@@ -13,11 +13,6 @@ public class SceneStateMachine : MonoBehaviour
     [SerializeField]
     private UnityEvent m_OnSceneEnd;
 
-    [SerializeField]
-    private BGMHandler m_BGMHandler;
-    [SerializeField]
-    private BGAHandler m_BGAHandler;
-
     private void Awake()
     {
         //SceneManager.sceneLoaded += OnSceneLoaded;
@@ -34,9 +29,6 @@ public class SceneStateMachine : MonoBehaviour
     private void Start()
     {
         m_OnSceneStart?.Invoke();
-
-        m_BGMHandler.DoAudio();
-        m_BGAHandler.DoAudio();
     }
 
     public void GoToScene(string scene)
