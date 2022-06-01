@@ -8,6 +8,7 @@ public class MenuManager : MonoBehaviour
     private string m_MenuState;
     [SerializeField]
     private MenuChannel m_MenuChannel;
+    private string m_CurrentState;
 
     private void Start()
     {

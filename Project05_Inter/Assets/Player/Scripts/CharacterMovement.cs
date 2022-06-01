@@ -15,6 +15,10 @@ public class CharacterMovement : MonoBehaviour
     private AudioClip m_MovementSound;
     [SerializeField]
     private AudioChannel m_AudioChannel;
+    private bool isAudioCooldown;
+    private float audioCooldownCount = 0f;
+    [SerializeField]
+    private float audioCooldown = 0.3f;
 
     [Header("Gravity System")]
     public float gravityScale;
@@ -29,6 +33,7 @@ public class CharacterMovement : MonoBehaviour
     private void Update()
     {
         DoGravity();
+        DoAudioCooldown();
     }
 
     public void DoMovement()
@@ -81,7 +86,28 @@ public class CharacterMovement : MonoBehaviour
         if(inputDirection.magnitude > 0.1f)
         {
             transform.forward = inputDirection.normalized;
-            m_AudioChannel.RequestAudio(m_MovementSound);
+            DoAudio(m_MovementSound);
+        }
+    }
+
+    public void DoAudioCooldown()
+    {
+        if (isAudioCooldown)
+        {
+            audioCooldownCount += Time.deltaTime;
+
+            if (audioCooldownCount >= audioCooldown)
+                isAudioCooldown = false;
+        }
+    }
+
+    public void DoAudio(AudioClip clip)
+    {
+        if (!isAudioCooldown)
+        {
+            audioCooldownCount = 0f;
+            AudioManager.scriptAudio.PlaySfxSimple(clip);
+            isAudioCooldown = true;
         }
     }
 

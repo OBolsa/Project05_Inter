@@ -1,25 +1,21 @@
 using System;
 using UnityEngine;
+using UnityEngine.Events;
 using UnityEngine.EventSystems;
 using UnityEngine.SceneManagement;
-
-public enum GameStates
-{
-    Overworld,
-    Match,
-    Menu
-}
 
 public class SceneStateMachine : MonoBehaviour
 {
     [SerializeField]
     private MatchChannel m_MatchChannel;
     [SerializeField]
-    private GameStates m_GameState;
+    private UnityEvent m_OnSceneStart;
+    [SerializeField]
+    private UnityEvent m_OnSceneEnd;
 
     private void Awake()
     {
-        SceneManager.sceneLoaded += OnSceneLoaded;
+        //SceneManager.sceneLoaded += OnSceneLoaded;
         m_MatchChannel.OnMatchStart += GoToMatch;
         m_MatchChannel.OnMatchEnd += BackToGame;
     }
@@ -28,6 +24,11 @@ public class SceneStateMachine : MonoBehaviour
     {
         m_MatchChannel.OnMatchStart -= GoToMatch;
         m_MatchChannel.OnMatchEnd -= BackToGame;
+    }
+
+    private void Start()
+    {
+        m_OnSceneStart?.Invoke();
     }
 
     void OnSceneLoaded(Scene scene, LoadSceneMode mode)
@@ -58,23 +59,20 @@ public class SceneStateMachine : MonoBehaviour
             //SceneManager.UnloadScene(SceneManager.GetActiveScene());
     }
 
+    public void GoToScene(string scene)
+    {
+        SceneManager.LoadScene(scene);
+    }
+
     public void GoToMatch()
     {
-        switch (m_GameState)
-        {
-            case GameStates.Overworld:
-                ChangeScene("MatchScene");
-                break;
-        }
+        m_OnSceneEnd?.Invoke();
+        SceneManager.LoadScene("MatchScene");
     }
 
     public void BackToGame()
     {
-        switch (m_GameState)
-        {
-            case GameStates.Match:
-                ChangeScene("TestsScene01");
-                break;
-        }
+        m_OnSceneEnd?.Invoke();
+        SceneManager.LoadScene("TestsScene01");
     }
 }

@@ -7,11 +7,24 @@ namespace SaveSystem
 {
     public class SaveAndLoadSystem : MonoBehaviour
     {
+        [SerializeField]
+        private SaveChannel m_SaveChannel;
         private string SavePath => $"{Application.persistentDataPath}/save.txt";
-        //private string SavePath => "C:/Users/Vitor/AppData/LocalLow/Skyduck/save.txt";
+
+        private void Awake()
+        {
+            m_SaveChannel.OnSave += Save;
+            m_SaveChannel.OnLoad += Load;
+        }
+
+        private void OnDestroy()
+        {
+            m_SaveChannel.OnSave -= Save;
+            m_SaveChannel.OnLoad -= Load;
+        }
 
         [ContextMenu("Save")]
-        private void Save()
+        public void Save()
         {
             var state = LoadFile();
             CaptureState(state);
@@ -19,10 +32,16 @@ namespace SaveSystem
         }
 
         [ContextMenu("Load")]
-        private void Load()
+        public void Load()
         {
             var state = LoadFile();
             RestoreState(state);
+        }
+
+        [ContextMenu("Reset Save")]
+        public void ResetSave()
+        {
+            File.Delete(SavePath);
         }
 
         private Dictionary<string, object> LoadFile()
@@ -36,21 +55,7 @@ namespace SaveSystem
             {
                 var formatter = new BinaryFormatter();
 
-                Dictionary<string, object> result = new Dictionary<string, object>();
-
-                try
-                {
-                    result = (Dictionary<string, object>)formatter.Deserialize(stream);
-                }
-                catch (System.Exception e)
-                {
-                    Debug.Log(e.Message);
-                    //throw;
-                }
-
-                return result;
-
-                //return (Dictionary<string, object>)formatter.Deserialize(stream);
+                return (Dictionary<string, object>)formatter.Deserialize(stream);
             }
         }
 

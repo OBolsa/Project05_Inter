@@ -8,6 +8,7 @@ public class UIObject : MonoBehaviour
     private string m_UiStateRelate;
     [SerializeField]
     private MenuChannel m_MenuChannel;
+    public bool isActive;
 
     [Header("Tween Region")]
     [SerializeField]
@@ -31,14 +32,16 @@ public class UIObject : MonoBehaviour
     {
         if(state == m_UiStateRelate)
         {
+            isActive = true;
             m_OnEnter.Invoke();
         }
     }
 
     public void ExitUiElement(string state)
     {
-        if(state != m_UiStateRelate)
+        if(state != m_UiStateRelate && isActive)
         {
+            isActive = false;
             m_OnExit.Invoke();
         }
     }

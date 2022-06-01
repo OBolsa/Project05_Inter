@@ -1,17 +1,18 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Events;
 
 namespace Tween 
 { 
     public class TweenAnimation : MonoBehaviour
     {
         [SerializeField]
-        private float m_AnimationTime = 0.3f;
-        private float enlapsedTime = 0f;
-        private float percentageComplete = 0f;
-        private bool doTween = false;
-        private bool conditionToEnd;
+        private float m_MoveAnimationTime = 0.3f;
+        private float moveEnlapsedTime = 0f;
+        private float movePercentageComplete = 0f;
+        private bool doMoveTween = false;
+        private bool conditionToEndMove;
 
         private Vector3 InitialPosition;
         private Vector3 InitialScale;
@@ -21,29 +22,93 @@ namespace Tween
         private Vector3 TargetScale;
         private Quaternion TargetRotation;
 
+        private float fadeAnimationTime;
+        private float fadeEnlapsedTime = 0f;
+        private float fadePercentageComplete = 0f;
+        private bool doFadeTween = false;
+        private bool fadeIn;
+        private bool conditionToEndFade;
+
+        [SerializeField]
+        private CanvasGroup canvasGroup;
+        [SerializeField]
+        private UnityEvent OnStartFadeIn;
+        [SerializeField]
+        private UnityEvent OnStartFadeOut;
+        [SerializeField]
+        private UnityEvent OnEndFadeIn;
+        [SerializeField]
+        private UnityEvent OnEndFadeOut;
+
         private void Update()
         {
-            DoTween();
+            DoMovementTween();
+            DoFadeTween();
         }
 
-        private void DoTween()
+        private void DoFadeTween()
         {
-            if (doTween)
+            if (doFadeTween)
             {
-                enlapsedTime += Time.deltaTime;
-                percentageComplete = enlapsedTime / m_AnimationTime;
+                fadeEnlapsedTime += Time.deltaTime;
+                fadePercentageComplete = fadeEnlapsedTime / fadeAnimationTime;
 
-                transform.SetPositionAndRotation(Vector3.Lerp(InitialPosition, TargetPosition, Mathf.SmoothStep(0, 1, percentageComplete)), Quaternion.Lerp(InitialRotation, TargetRotation, Mathf.SmoothStep(0, 1, percentageComplete)));
-                transform.localScale = Vector3.Lerp(InitialScale, TargetScale, Mathf.SmoothStep(0, 1, percentageComplete));
+                canvasGroup.alpha = fadeIn ? Mathf.SmoothStep(0, 1, fadePercentageComplete) : Mathf.SmoothStep(1, 0, fadePercentageComplete);
 
-                if(conditionToEnd)
+                if (conditionToEndFade)
+                {
+                    canvasGroup = null;
+                    fadeEnlapsedTime = 0f;
+                    doFadeTween = false;
+
+                    if (fadeIn)
+                        OnEndFadeIn?.Invoke();
+                    else
+                        OnEndFadeOut?.Invoke();
+                }
+            }
+        }
+
+        public void StartFadeIn(float fadeTime)
+        {
+            fadeAnimationTime = fadeTime;
+            canvasGroup.alpha = 0f;
+            fadeEnlapsedTime = 0f;
+            conditionToEndFade = canvasGroup.alpha == 1f;
+            fadeIn = true;
+            doFadeTween = true;
+            OnStartFadeIn?.Invoke();
+        }
+
+        public void StartFadeOut(float fadeTime)
+        {
+            fadeAnimationTime = fadeTime;
+            canvasGroup.alpha = 1f;
+            fadeEnlapsedTime = 0f;
+            conditionToEndFade = canvasGroup.alpha == 0f;
+            fadeIn = false;
+            doFadeTween = true;
+            OnStartFadeOut?.Invoke();
+        }
+
+        private void DoMovementTween()
+        {
+            if (doMoveTween)
+            {
+                moveEnlapsedTime += Time.deltaTime;
+                movePercentageComplete = moveEnlapsedTime / m_MoveAnimationTime;
+
+                transform.SetPositionAndRotation(Vector3.Lerp(InitialPosition, TargetPosition, Mathf.SmoothStep(0, 1, movePercentageComplete)), Quaternion.Lerp(InitialRotation, TargetRotation, Mathf.SmoothStep(0, 1, movePercentageComplete)));
+                transform.localScale = Vector3.Lerp(InitialScale, TargetScale, Mathf.SmoothStep(0, 1, movePercentageComplete));
+
+                if(conditionToEndMove)
                 {
                     InitialPosition = Vector3.zero;
                     TargetPosition = Vector3.zero;
                     InitialScale = Vector3.zero;
                     TargetScale = Vector3.zero;
-                    enlapsedTime = 0f;
-                    doTween = false;
+                    moveEnlapsedTime = 0f;
+                    doMoveTween = false;
                 }
             }
         }
@@ -58,9 +123,9 @@ namespace Tween
             TargetRotation = transform.rotation;
             TargetScale = transform.localScale;
 
-            enlapsedTime = 0f;
-            doTween = true;
-            conditionToEnd = transform.position == TargetPosition;
+            moveEnlapsedTime = 0f;
+            doMoveTween = true;
+            conditionToEndMove = transform.position == TargetPosition;
         }
 
         public void StartRotation(Transform desiredRot)
@@ -73,9 +138,9 @@ namespace Tween
             TargetRotation = desiredRot.rotation;
             TargetScale = transform.localScale;
 
-            enlapsedTime = 0f;
-            doTween = true;
-            conditionToEnd = transform.rotation == TargetRotation;
+            moveEnlapsedTime = 0f;
+            doMoveTween = true;
+            conditionToEndMove = transform.rotation == TargetRotation;
         }
 
         public void StartScale(Transform desiredScale)
@@ -88,9 +153,9 @@ namespace Tween
             TargetRotation = transform.rotation;
             TargetScale = desiredScale.localScale;
 
-            enlapsedTime = 0f;
-            doTween = true;
-            conditionToEnd = transform.localScale == TargetScale;
+            moveEnlapsedTime = 0f;
+            doMoveTween = true;
+            conditionToEndMove = transform.localScale == TargetScale;
         }
 
         public void StartMovementAndRotation(Vector3 desiredPos, Quaternion desiredRot)
@@ -103,9 +168,9 @@ namespace Tween
             TargetRotation = desiredRot;
             TargetScale = transform.localScale;
 
-            enlapsedTime = 0f;
-            doTween = true;
-            conditionToEnd = transform.position == TargetPosition && transform.rotation == TargetRotation;
+            moveEnlapsedTime = 0f;
+            doMoveTween = true;
+            conditionToEndMove = transform.position == TargetPosition && transform.rotation == TargetRotation;
         }
 
         public void StartMovementAndScale(Vector3 desiredPos, Vector3 desiredScale)
@@ -118,9 +183,9 @@ namespace Tween
             TargetRotation = transform.rotation;
             TargetScale = desiredScale;
 
-            enlapsedTime = 0f;
-            doTween = true;
-            conditionToEnd = transform.position == TargetPosition && transform.localScale == TargetScale;
+            moveEnlapsedTime = 0f;
+            doMoveTween = true;
+            conditionToEndMove = transform.position == TargetPosition && transform.localScale == TargetScale;
         }
 
         public void StartRotationAndScale(Vector3 desiredScale, Quaternion desiredRot)
@@ -133,9 +198,9 @@ namespace Tween
             TargetRotation = desiredRot;
             TargetScale = desiredScale;
 
-            enlapsedTime = 0f;
-            doTween = true;
-            conditionToEnd = transform.localScale == TargetScale && transform.rotation == TargetRotation;
+            moveEnlapsedTime = 0f;
+            doMoveTween = true;
+            conditionToEndMove = transform.localScale == TargetScale && transform.rotation == TargetRotation;
         }
 
         public void StartMovementRotationAndScale(Vector3 desiredPos, Vector3 desiredScale, Quaternion desiredRot)
@@ -148,9 +213,9 @@ namespace Tween
             TargetRotation = desiredRot;
             TargetScale = desiredScale;
 
-            enlapsedTime = 0f;
-            doTween = true;
-            conditionToEnd = transform.position == TargetPosition && transform.localScale == TargetScale && transform.rotation == TargetRotation;
+            moveEnlapsedTime = 0f;
+            doMoveTween = true;
+            conditionToEndMove = transform.position == TargetPosition && transform.localScale == TargetScale && transform.rotation == TargetRotation;
         }
     }
 }
