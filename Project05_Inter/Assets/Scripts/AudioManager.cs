@@ -96,7 +96,7 @@ public class AudioManager : MonoBehaviour
     public void PlayBga(AudioClip music, float volume)
     {
         volumeBgaModifier = volume;
-        bgaSource.volume = ReturnBgmVolume();
+        bgaSource.volume = ReturnBgaVolume();
         bgaSource.clip = music;
         bgaSource.Play();
     }

@@ -13,6 +13,11 @@ public class SceneStateMachine : MonoBehaviour
     [SerializeField]
     private UnityEvent m_OnSceneEnd;
 
+    [SerializeField]
+    private BGMHandler m_BGMHandler;
+    [SerializeField]
+    private BGAHandler m_BGAHandler;
+
     private void Awake()
     {
         //SceneManager.sceneLoaded += OnSceneLoaded;
@@ -29,34 +34,9 @@ public class SceneStateMachine : MonoBehaviour
     private void Start()
     {
         m_OnSceneStart?.Invoke();
-    }
 
-    void OnSceneLoaded(Scene scene, LoadSceneMode mode)
-    {
-        Scene myScene = SceneManager.GetSceneAt(SceneManager.sceneCount - 1);
-        SceneManager.SetActiveScene(myScene);
-
-        AudioListener audioL = FindObjectOfType<AudioListener>();
-        EventSystem eventSystem = FindObjectOfType<EventSystem>();
-
-        audioL.enabled = false;
-        eventSystem.enabled = false;
-    }
-
-    public void ChangeScene(string scene)
-    {
-        AudioListener audioL = FindObjectOfType<AudioListener>();
-        EventSystem eventSystem = FindObjectOfType<EventSystem>();
-
-        audioL.enabled = true;
-        eventSystem.enabled = true;
-
-        if (SceneManager.GetActiveScene().name != "MatchScene")
-            SceneController.Instance.ChangeScene(scene, LoadSceneMode.Single);
-        else
-            SceneManager.UnloadSceneAsync(SceneManager.GetActiveScene().name);
-            //SceneController.Instance.ChangeScene("MatchScene", LoadSceneMode.Additive);
-            //SceneManager.UnloadScene(SceneManager.GetActiveScene());
+        m_BGMHandler.DoAudio();
+        m_BGAHandler.DoAudio();
     }
 
     public void GoToScene(string scene)

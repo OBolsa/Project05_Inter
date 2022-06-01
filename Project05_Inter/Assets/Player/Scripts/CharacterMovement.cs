@@ -11,14 +11,10 @@ public class CharacterMovement : MonoBehaviour
     private Vector3 inputDirection;
     private CharacterController controller;
     private ICharacterMovementInput movementInput;
+
     [SerializeField]
-    private AudioClip m_MovementSound;
-    [SerializeField]
-    private AudioChannel m_AudioChannel;
-    private bool isAudioCooldown;
-    private float audioCooldownCount = 0f;
-    [SerializeField]
-    private float audioCooldown = 0.3f;
+    private SFXHandler[] m_SFXs;
+    private Dictionary<string, SFXHandler> m_SFXList = new Dictionary<string, SFXHandler>();
 
     [Header("Gravity System")]
     public float gravityScale;
@@ -30,10 +26,25 @@ public class CharacterMovement : MonoBehaviour
         movementInput = GetComponent<ICharacterMovementInput>();
     }
 
+    private void Start()
+    {
+        foreach (var sfx in m_SFXs)
+        {
+            m_SFXList.Add(sfx.SFXName, sfx);
+        }
+    }
+
     private void Update()
     {
         DoGravity();
-        DoAudioCooldown();
+
+        foreach (var sfx in m_SFXs)
+        {
+            sfx.DoAudioCooldown();
+        }
+
+        if(controller.velocity.magnitude > 0.1f)
+            m_SFXList["Walk"].DoAudio(new Vector2(0.5f, 1f));
     }
 
     public void DoMovement()
@@ -86,28 +97,6 @@ public class CharacterMovement : MonoBehaviour
         if(inputDirection.magnitude > 0.1f)
         {
             transform.forward = inputDirection.normalized;
-            DoAudio(m_MovementSound);
-        }
-    }
-
-    public void DoAudioCooldown()
-    {
-        if (isAudioCooldown)
-        {
-            audioCooldownCount += Time.deltaTime;
-
-            if (audioCooldownCount >= audioCooldown)
-                isAudioCooldown = false;
-        }
-    }
-
-    public void DoAudio(AudioClip clip)
-    {
-        if (!isAudioCooldown)
-        {
-            audioCooldownCount = 0f;
-            AudioManager.scriptAudio.PlaySfxSimple(clip);
-            isAudioCooldown = true;
         }
     }
 
