@@ -45,6 +45,6 @@ public class SceneStateMachine : MonoBehaviour
     public void BackToGame()
     {
         m_OnSceneEnd?.Invoke();
-        SceneManager.LoadScene("TestsScene01");
+        SceneManager.LoadScene("GameScene");
     }
 }
