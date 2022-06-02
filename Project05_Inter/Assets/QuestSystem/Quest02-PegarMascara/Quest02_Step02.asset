@@ -15,6 +15,6 @@ MonoBehaviour:
   m_QuestLine: {fileID: 11400000, guid: 474ab6aaf993afd439c6254f984720a4, type: 2}
   m_QuestStepCondition: 1
   m_QuestStep: 2
-  m_QuestStepName: Pegar Resina
+  m_QuestStepName: "Ter Falo com a Crian\xE7a"
   m_QuestStepDescription: 
   m_NextNode: {fileID: 0}

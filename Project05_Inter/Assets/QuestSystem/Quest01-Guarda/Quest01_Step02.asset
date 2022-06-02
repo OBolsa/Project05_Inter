@@ -17,4 +17,4 @@ MonoBehaviour:
   m_QuestStep: 2
   m_QuestStepName: Conversar com Guarda
   m_QuestStepDescription: Teste.
-  m_NextNode: {fileID: 11400000, guid: a271100507eb945499d8d52e2dd6d6c2, type: 2}
+  m_NextNode: {fileID: 11400000, guid: 7c07f610786bcae44834dd0516dbb5ce, type: 2}

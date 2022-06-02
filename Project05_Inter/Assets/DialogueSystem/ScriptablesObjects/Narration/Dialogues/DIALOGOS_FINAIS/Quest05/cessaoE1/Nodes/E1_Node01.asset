@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: E1_Node01
   m_EditorClassIdentifier: 
   m_DialogueLine: {fileID: 11400000, guid: 83d5fd8c789d92f46a935f9a0c31c32a, type: 2}
-  m_QuestNode: {fileID: 0}
+  m_QuestNode: {fileID: 11400000, guid: 241d4c8cbdedf3e4d9b56374a4e5b9bd, type: 2}
   m_NextNode: {fileID: 11400000, guid: 69789f737243ab44eb5de9a0729fb38d, type: 2}
   m_OnEndNode:
     m_PersistentCalls:
