@@ -2195,7 +2195,7 @@ PrefabInstance:
     - target: {fileID: -6991890010536664387, guid: bae1e40a74125ab44bae7d1c423cdda3, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 2100000, guid: 6c8d3eff516d99941a67e52e67dda5b1, type: 2}
+      objectReference: {fileID: 2100000, guid: d3a76435068756441b35495f6aa97eae, type: 2}
     - target: {fileID: 919132149155446097, guid: bae1e40a74125ab44bae7d1c423cdda3, type: 3}
       propertyPath: m_Name
       value: PONTE_MESH
