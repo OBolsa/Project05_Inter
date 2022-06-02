@@ -38,7 +38,7 @@ public class DialogueSelector : MonoBehaviour
             }
         }
 
-        return m_Dialogs[0];
+        return m_Dialogs[0].QuestStepNode == null ? m_Dialogs[0] : null;
     }
 
     public int DialogIndexByQuest(QuestLine quest)

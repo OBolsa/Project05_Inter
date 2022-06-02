@@ -20,7 +20,8 @@ public class NPCInteractionInstigator : MonoBehaviour
         {
             //Ideally, we'd want to find the best possible interaction (ex: by distance & orientation).
             //m_NearbyInteractables[0].DoInteraction();
-            m_NearbyNPCInteractables[0].PossibleDialogLine().DoInteraction();
+            if(m_NearbyNPCInteractables[0].PossibleDialogLine() != null)
+                m_NearbyNPCInteractables[0].PossibleDialogLine().DoInteraction();
         }
     }
 

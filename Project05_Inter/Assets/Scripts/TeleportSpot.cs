@@ -26,7 +26,13 @@ public class TeleportSpot : MonoBehaviour
         if(teleportId == m_TeleportId)
         {
             Debug.Log("doTeleport. " + m_Target.name + " goes from " + m_Target.transform.position + " to " + transform.position);
+            CharacterController controller = m_Target.GetComponent<CharacterController>();
+
+            if (controller != null)
+                controller.enabled = false;
             m_Target.transform.position = transform.position;
+            if (controller != null)
+                controller.enabled = true;
         }
     }
 }

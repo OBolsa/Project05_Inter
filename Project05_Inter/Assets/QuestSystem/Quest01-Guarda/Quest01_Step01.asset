@@ -10,11 +10,11 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: c48be6da96061324f81899328cf4d165, type: 3}
-  m_Name: Step2
+  m_Name: Quest01_Step01
   m_EditorClassIdentifier: 
   m_QuestLine: {fileID: 11400000, guid: 88f349d1632d10946863ab6c20a4ef1a, type: 2}
-  m_QuestStepCondition: 1
-  m_QuestStep: 2
-  m_QuestStepName: Testando 01
+  m_QuestStepCondition: 0
+  m_QuestStep: 1
+  m_QuestStepName: Jogar contra Guarda
   m_QuestStepDescription: Teste.
-  m_NextNode: {fileID: 0}
+  m_NextNode: {fileID: 11400000, guid: 949d7d98c6c39994ba30be02ada1de3f, type: 2}

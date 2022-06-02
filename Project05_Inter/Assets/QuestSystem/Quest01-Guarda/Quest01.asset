@@ -10,8 +10,9 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 9403fc076043cd34fa8795f7ed5dcd4b, type: 3}
-  m_Name: QuestLine-01
+  m_Name: Quest01
   m_EditorClassIdentifier: 
-  m_QuestLineID: QuestTest01
+  m_QuestLineID: Quest01
+  m_QuestLineCondition: {fileID: 0}
   m_QuestLineName: Quest 01
   m_FirstQuestStepNode: {fileID: 11400000, guid: 6f7d68c5abf2c744bb812dfd68f03583, type: 2}
