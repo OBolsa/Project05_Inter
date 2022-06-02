@@ -12,5 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c31385de04dc03a4e8a8aebb89cf066d, type: 3}
   m_Name: G1_Line08
   m_EditorClassIdentifier: 
-  m_Speaker: {fileID: 0}
-  m_Text: 
+  m_Speaker: {fileID: 11400000, guid: 02fbe1a12b355104e992d142db441511, type: 2}
+  m_Text: "\xC9 no m\xEDnimo curioso que apare\xE7as novamente \rjusto no momento
+    em que perdi a m\xE1scara que sela nosso acordo.\r"

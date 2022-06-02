@@ -12,9 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e5aa8de72a3959042a97c09cae1cfd9c, type: 3}
   m_Name: D1_Node01
   m_EditorClassIdentifier: 
-  m_DialogueLine: {fileID: 0}
+  m_DialogueLine: {fileID: 11400000, guid: 4da79a7e57d2d2a43ad14100dc47b4ef, type: 2}
   m_QuestNode: {fileID: 0}
-  m_NextNode: {fileID: 0}
+  m_NextNode: {fileID: 11400000, guid: 941db1895165e9d4c8849a7fd00d5a60, type: 2}
   m_OnEndNode:
     m_PersistentCalls:
       m_Calls: []

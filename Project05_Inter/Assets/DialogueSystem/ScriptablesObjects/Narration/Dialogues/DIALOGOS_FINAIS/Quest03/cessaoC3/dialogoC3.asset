@@ -12,4 +12,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f24f469bd406c2943aa1b42e4435b922, type: 3}
   m_Name: dialogoC3
   m_EditorClassIdentifier: 
-  m_FirstNode: {fileID: 0}
+  m_FirstNode: {fileID: 11400000, guid: 186bef75e0bbd8947876e309021010f7, type: 2}

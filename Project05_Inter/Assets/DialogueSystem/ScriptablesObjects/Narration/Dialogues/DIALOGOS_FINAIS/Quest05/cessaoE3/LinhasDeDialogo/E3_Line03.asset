@@ -12,5 +12,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c31385de04dc03a4e8a8aebb89cf066d, type: 3}
   m_Name: E3_Line03
   m_EditorClassIdentifier: 
-  m_Speaker: {fileID: 11400000, guid: e5e9f2b17e87b0b40b0fa57fe8c515ab, type: 2}
-  m_Text: "O que \xE9 resina papai?\r"
+  m_Speaker: {fileID: 11400000, guid: c8aefc08ca5e5a04295d3391a1dee5c1, type: 2}
+  m_Text: Foi interessante. Vou-me indo em busca da resina.

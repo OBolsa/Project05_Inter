@@ -12,5 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c31385de04dc03a4e8a8aebb89cf066d, type: 3}
   m_Name: G1_Line21
   m_EditorClassIdentifier: 
-  m_Speaker: {fileID: 0}
-  m_Text: 
+  m_Speaker: {fileID: 11400000, guid: c8aefc08ca5e5a04295d3391a1dee5c1, type: 2}
+  m_Text: "Ent\xE3o queres m\xE1scara de volta? Com ela tentar novamente, criar novos
+    la\xE7os...\r"
