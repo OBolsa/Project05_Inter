@@ -10,8 +10,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: c31385de04dc03a4e8a8aebb89cf066d, type: 3}
-  m_Name: B1_Line01
+  m_Name: A1_Line05
   m_EditorClassIdentifier: 
   m_Speaker: {fileID: 11400000, guid: c8aefc08ca5e5a04295d3391a1dee5c1, type: 2}
-  m_Text: "\xC9 um ambiente bem agrad\xE1vel para um lugar t\xE3o long\xEDnquo, n\xE3o
-    \xE9 mesmo?"
+  m_Text: "Talvez. Mas se eu \u201Chipoteticamente\u201D fosse esse \restrangeiro
+    querendo entrar para ver um amigo, \rtemo que agora eu discordaria.\r"

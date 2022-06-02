@@ -10,8 +10,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: c31385de04dc03a4e8a8aebb89cf066d, type: 3}
-  m_Name: B1_Line01
+  m_Name: A1_Line06
   m_EditorClassIdentifier: 
-  m_Speaker: {fileID: 11400000, guid: c8aefc08ca5e5a04295d3391a1dee5c1, type: 2}
-  m_Text: "\xC9 um ambiente bem agrad\xE1vel para um lugar t\xE3o long\xEDnquo, n\xE3o
-    \xE9 mesmo?"
+  m_Speaker: {fileID: 11400000, guid: f8e178efedde2f64bb06760438c0d6f5, type: 2}
+  m_Text: "\xC9, e eu ent\xE3o \u201Chipoteticamente\u201D diria: \u201Csinto\r muito\u201D
+    - e logo em seguida daria uma boa bicuda \rna bunda desse cara!\r"
