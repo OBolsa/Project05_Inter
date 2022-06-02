@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Apostador_01_Node16
   m_EditorClassIdentifier: 
   m_DialogueLine: {fileID: 11400000, guid: 4470a88ca15a1e44086bcece91e42299, type: 2}
-  m_QuestNode: {fileID: 11400000, guid: a271100507eb945499d8d52e2dd6d6c2, type: 2}
+  m_QuestNode: {fileID: 11400000, guid: 7c07f610786bcae44834dd0516dbb5ce, type: 2}
   m_NextNode: {fileID: 0}
   m_OnEndNode:
     m_PersistentCalls:
