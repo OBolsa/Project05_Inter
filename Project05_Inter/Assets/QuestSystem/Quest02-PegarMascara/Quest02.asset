@@ -13,6 +13,6 @@ MonoBehaviour:
   m_Name: Quest02
   m_EditorClassIdentifier: 
   m_QuestLineID: Quest02
-  m_QuestLineCondition: {fileID: 11400000, guid: 88f349d1632d10946863ab6c20a4ef1a, type: 2}
+  m_QuestLineCondition: {fileID: 0}
   m_QuestLineName: Quest02
-  m_FirstQuestStepNode: {fileID: 0}
+  m_FirstQuestStepNode: {fileID: 11400000, guid: 78990c5c4aaa5c74bb4e10c949a73373, type: 2}
