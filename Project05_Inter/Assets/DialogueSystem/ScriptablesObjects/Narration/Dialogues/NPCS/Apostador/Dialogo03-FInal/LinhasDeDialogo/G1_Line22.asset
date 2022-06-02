@@ -1,0 +1,17 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c31385de04dc03a4e8a8aebb89cf066d, type: 3}
+  m_Name: G1_Line22
+  m_EditorClassIdentifier: 
+  m_Speaker: {fileID: 11400000, guid: 02fbe1a12b355104e992d142db441511, type: 2}
+  m_Text: "Talvez se a peste se acalmasse eu poderia pensar \rnisso. Mas n\xE3o me
+    acostumei ainda com a dor da \rperda.\r\n"
