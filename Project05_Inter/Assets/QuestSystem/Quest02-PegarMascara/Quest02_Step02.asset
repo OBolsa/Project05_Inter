@@ -17,4 +17,4 @@ MonoBehaviour:
   m_QuestStep: 2
   m_QuestStepName: "Ter Falo com a Crian\xE7a"
   m_QuestStepDescription: 
-  m_NextNode: {fileID: 0}
+  m_NextNode: {fileID: 11400000, guid: dc39a8ab9a308884dbd127856121be09, type: 2}

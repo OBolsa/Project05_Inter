@@ -3,6 +3,7 @@ using UnityEngine;
 [System.Serializable]
 public class QuestData
 {
+    [SerializeField]
     private string m_QuestID;
     public string QuestID => m_QuestID;
 

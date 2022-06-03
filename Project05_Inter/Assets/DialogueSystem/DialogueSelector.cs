@@ -1,7 +1,8 @@
 using System.Collections.Generic;
 using UnityEngine;
-
-public class DialogueSelector : MonoBehaviour
+using SaveSystem;
+    
+public class DialogueSelector : MonoBehaviour, ISaveable
 {
     [SerializeField]
     private Interactable[] m_Dialogs;
@@ -25,6 +26,8 @@ public class DialogueSelector : MonoBehaviour
 
     public Interactable PossibleDialogLine()
     {
+        List<Interactable> possibleInteractions = new List<Interactable>();
+
         foreach (Interactable item in m_Dialogs)
         {
             if(item.QuestStepNode != null)
@@ -33,12 +36,17 @@ public class DialogueSelector : MonoBehaviour
 
                 if (CanTalkAboutThisQuest)
                 {
-                    return m_Dialogs[DialogIndexByQuest(item.QuestStepNode.QuestLine)];
+                    possibleInteractions.Add(item);
                 }
             }
         }
 
-        return m_Dialogs[0].QuestStepNode == null ? m_Dialogs[0] : null;
+        if(possibleInteractions.Count > 0)
+        {
+            return m_Dialogs[DialogIndexByQuest(possibleInteractions[possibleInteractions.Count - 1].QuestStepNode.QuestLine)];
+        }
+        else
+            return m_Dialogs[0].QuestStepNode == null ? m_Dialogs[0] : null;
     }
 
     public int DialogIndexByQuest(QuestLine quest)
@@ -68,5 +76,35 @@ public class DialogueSelector : MonoBehaviour
     public void SetQuestManager(PlayerQuestsManager questManager)
     {
         m_QuestsManager = questManager;
+    }
+
+    public object CaptureState()
+    {
+        return new SaveData
+        {
+            xPos = transform.position.x,
+            yPos = transform.position.y,
+            zPos = transform.position.z,
+            xRot = transform.rotation.x,
+            yRot = transform.rotation.y,
+            zRot = transform.rotation.z
+        };
+    }
+
+    public void RestoreState(object state)
+    {
+        var savedData = (SaveData)state;
+        transform.SetPositionAndRotation(new Vector3(savedData.xPos, savedData.yPos, savedData.zPos), Quaternion.Euler(savedData.xRot, savedData.yRot, savedData.zRot));
+    }
+
+    [System.Serializable]
+    private struct SaveData
+    {
+        public float xPos;
+        public float yPos;
+        public float zPos;
+        public float xRot;
+        public float yRot;
+        public float zRot;
     }
 }

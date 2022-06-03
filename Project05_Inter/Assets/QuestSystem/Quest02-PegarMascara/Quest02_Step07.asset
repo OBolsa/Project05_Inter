@@ -17,4 +17,4 @@ MonoBehaviour:
   m_QuestStep: 7
   m_QuestStepName: Ter entregado a Resina pra Bibliotecaria
   m_QuestStepDescription: 
-  m_NextNode: {fileID: 0}
+  m_NextNode: {fileID: 11400000, guid: 9c5115689dbc6214883fa5c2fb3fa8f6, type: 2}
