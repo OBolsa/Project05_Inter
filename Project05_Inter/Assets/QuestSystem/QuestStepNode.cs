@@ -11,6 +11,8 @@ public abstract class QuestStepNode : ScriptableObject
     [SerializeField]
     private string m_QuestStepName;
     [SerializeField]
+    private string m_QuestDisplayObjective;
+    [SerializeField]
     [TextArea(0, 5)] private string m_QuestStepDescription;
 
     public QuestLine QuestLine => m_QuestLine;
@@ -18,6 +20,7 @@ public abstract class QuestStepNode : ScriptableObject
     public int QuestStep => m_QuestStep;
     public string QuestStepName => m_QuestStepName;
     public string QuestStepDescription => m_QuestStepDescription;
+    public string QuestStepOjbective => m_QuestDisplayObjective;
 
     public abstract bool CanBeFollowedByNode(QuestStepNode node);
     public abstract void Accept(IQuestNodeVisitor visitor);

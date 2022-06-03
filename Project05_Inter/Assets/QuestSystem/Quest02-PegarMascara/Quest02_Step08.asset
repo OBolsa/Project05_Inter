@@ -16,5 +16,6 @@ MonoBehaviour:
   m_QuestStepCondition: 7
   m_QuestStep: 8
   m_QuestStepName: Ter jogado contra o Apostador
+  m_QuestDisplayObjective: Obrigado por Jogar!
   m_QuestStepDescription: 
   m_NextNode: {fileID: 0}

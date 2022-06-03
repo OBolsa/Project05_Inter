@@ -1,8 +1,9 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using SaveSystem;
 
-public class Door : MonoBehaviour
+public class Door : MonoBehaviour, ISaveable
 {
     [SerializeField]
     private DoorChannel m_DoorChannel;
@@ -39,5 +40,36 @@ public class Door : MonoBehaviour
             foreach (GameObject door in m_DoorModel)
                 door.SetActive(true);
         }
+    }
+
+    public object CaptureState()
+    {
+        bool[] door = new bool[m_DoorModel.Length];
+
+        for (int i = 0; i < door.Length; i++)
+        {
+            door[i] = m_DoorModel[i].activeSelf;
+        }
+
+        return new SaveData
+        {
+            doorsModelsOpen = door
+        };
+    }
+
+    public void RestoreState(object state)
+    {
+        var savedState = (SaveData)state;
+
+        for (int i = 0; i < m_DoorModel.Length; i++)
+        {
+            m_DoorModel[i].SetActive(savedState.doorsModelsOpen[i]);
+        }
+    }
+
+    [System.Serializable]
+    public struct SaveData
+    {
+        public bool[] doorsModelsOpen;
     }
 }

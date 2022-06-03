@@ -16,5 +16,6 @@ MonoBehaviour:
   m_QuestStepCondition: 1
   m_QuestStep: 2
   m_QuestStepName: "Ter Falo com a Crian\xE7a"
+  m_QuestDisplayObjective: "Consiga mais informa\xE7\xF5es sobre o Amuleto."
   m_QuestStepDescription: 
   m_NextNode: {fileID: 11400000, guid: dc39a8ab9a308884dbd127856121be09, type: 2}

@@ -16,3 +16,4 @@ MonoBehaviour:
   m_QuestLineCondition: {fileID: 0}
   m_QuestLineName: Quest02
   m_FirstQuestStepNode: {fileID: 11400000, guid: 78990c5c4aaa5c74bb4e10c949a73373, type: 2}
+  m_ConcludeQuestStepNode: {fileID: 11400000, guid: 9c5115689dbc6214883fa5c2fb3fa8f6, type: 2}

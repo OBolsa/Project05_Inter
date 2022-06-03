@@ -16,5 +16,6 @@ MonoBehaviour:
   m_QuestStepCondition: 2
   m_QuestStep: 3
   m_QuestStepName: Descobrir sobre a Mascara
+  m_QuestDisplayObjective: Encontre o Amuleto.
   m_QuestStepDescription: Teste.
   m_NextNode: {fileID: 0}

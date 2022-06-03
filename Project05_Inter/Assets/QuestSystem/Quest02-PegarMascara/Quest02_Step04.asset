@@ -16,5 +16,6 @@ MonoBehaviour:
   m_QuestStepCondition: 3
   m_QuestStep: 4
   m_QuestStepName: Ter Falo com o Aristocrata
+  m_QuestDisplayObjective: "Consiga mais informa\xE7\xF5es com o Aristocrata."
   m_QuestStepDescription: 
   m_NextNode: {fileID: 11400000, guid: 8ecd35e85ff7e32478f272ce643a1590, type: 2}

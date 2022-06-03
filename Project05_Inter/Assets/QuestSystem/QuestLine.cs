@@ -12,11 +12,14 @@ public class QuestLine : ScriptableObject
     private string m_QuestLineName;
     [SerializeField]
     private QuestStepNode m_FirstQuestStepNode;
+    [SerializeField]
+    private QuestStepNode m_ConcludeQuestStepNode;
 
     public string QuestLineID =>  m_QuestLineID;
     public QuestLine QuestLineCondition => m_QuestLineCondition;
     public string FirstQuestLineName => m_QuestLineName;
     public QuestStepNode QuestStepNode => m_FirstQuestStepNode;  
+    public QuestStepNode QuestStepConcludeNode => m_ConcludeQuestStepNode;  
 
     public void GenerateQuestID()
     {

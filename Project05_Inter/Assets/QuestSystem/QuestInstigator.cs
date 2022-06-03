@@ -27,11 +27,13 @@ public class QuestInstigator : MonoBehaviour
 
         if(!PlayerQuestsManager.HaveQuest(dialogue.FirstNode.QuestNode.QuestLine) && PlayerQuestsManager.CanStartThisQuest(dialogue.FirstNode.QuestNode.QuestLine))
         {
-            PlayerQuestsManager.PlayerQuestData.Add(new QuestData(dialogue.FirstNode.QuestNode.QuestLine.QuestLineID));
+            PlayerQuestsManager.PlayerQuestData.Add(new QuestData(dialogue.FirstNode.QuestNode.QuestLine.QuestLineID, dialogue.FirstNode.QuestNode.QuestStepOjbective));
+            PlayerQuestsManager.UpdateQuestObjective(dialogue.FirstNode.QuestNode.QuestStepOjbective);
         }
         else if (PlayerQuestsManager.HaveQuest(dialogue.FirstNode.QuestNode.QuestLine) && PlayerQuestsManager.CanStartThisNode(dialogue.FirstNode.QuestNode))
         {
             PlayerQuestsManager.GetQuestByID(dialogue.FirstNode.QuestNode.QuestLine).CurrentQuestStep = dialogue.FirstNode.QuestNode.QuestStep;
+            PlayerQuestsManager.UpdateQuestObjective(dialogue.FirstNode.QuestNode.QuestStepOjbective);
         }
     }
 

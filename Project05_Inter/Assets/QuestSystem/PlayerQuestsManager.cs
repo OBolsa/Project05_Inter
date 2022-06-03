@@ -6,6 +6,8 @@ using SaveSystem;
 public class PlayerQuestsManager : MonoBehaviour, ISaveable
 {
     [SerializeField]
+    private ObjectiveChannel m_ObjectiveChannel;
+    [SerializeField]
     public List<QuestData> PlayerQuestData = new List<QuestData>();
 
     public bool HaveQuest(QuestLine quest)
@@ -89,6 +91,16 @@ public class PlayerQuestsManager : MonoBehaviour, ISaveable
     public void RaiseNode(QuestStepNode node)
     {
         QuestByQuestID(node.QuestLine).CurrentQuestStep = node.QuestStep;
+
+        if (QuestByQuestID(node.QuestLine).CurrentQuestStep == node.QuestLine.QuestStepConcludeNode.QuestStep)
+        {
+            CompleteQuest(node.QuestLine);
+        }
+    }
+
+    public void UpdateQuestObjective(string obj)
+    {
+        m_ObjectiveChannel.UpdateObjective(obj);
     }
 
     public void CompleteQuest(QuestLine quest)

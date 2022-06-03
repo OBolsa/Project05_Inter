@@ -17,4 +17,16 @@ MonoBehaviour:
   m_NextNode: {fileID: 11400000, guid: f38a30e64774542429608a62ba60e8ee, type: 2}
   m_OnEndNode:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 11400000, guid: fabda639ff8706245b8be9acc312bbf9, type: 2}
+        m_TargetAssemblyTypeName: DoorChannel, Assembly-CSharp
+        m_MethodName: OpenDoor
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 2
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2

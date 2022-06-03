@@ -16,5 +16,6 @@ MonoBehaviour:
   m_QuestStepCondition: 0
   m_QuestStep: 1
   m_QuestStepName: Jogar contra Guarda
+  m_QuestDisplayObjective: Ache uma maneira de abrir a porta.
   m_QuestStepDescription: Teste.
   m_NextNode: {fileID: 11400000, guid: 949d7d98c6c39994ba30be02ada1de3f, type: 2}

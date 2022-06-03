@@ -6,6 +6,7 @@ public class QuestData
     [SerializeField]
     private string m_QuestID;
     public string QuestID => m_QuestID;
+    public string QuestObjective;
 
     public int CurrentQuestStep;
     public bool IsCompleted;
@@ -15,5 +16,13 @@ public class QuestData
         m_QuestID = questId;
         CurrentQuestStep = 0;
         IsCompleted = false;
+    }
+
+    public QuestData(string questId, string objective)
+    {
+        m_QuestID = questId;
+        CurrentQuestStep = 0;
+        IsCompleted = false;
+        QuestObjective = objective;
     }
 }
