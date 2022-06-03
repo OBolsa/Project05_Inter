@@ -13,5 +13,5 @@ MonoBehaviour:
   m_Name: D1_Line07
   m_EditorClassIdentifier: 
   m_Speaker: {fileID: 11400000, guid: ccad5da843ab58f4d9f26075ab69927b, type: 2}
-  m_Text: "Pois bem, pode deixar comigo, seria um pecado \rdeixar uma pe\xE7a t\xE3o
+  m_Text: "Pois bem, pode deixar comigo, seria um pecado deixar uma pe\xE7a t\xE3o
     exc\xEAntrica nesse estado."

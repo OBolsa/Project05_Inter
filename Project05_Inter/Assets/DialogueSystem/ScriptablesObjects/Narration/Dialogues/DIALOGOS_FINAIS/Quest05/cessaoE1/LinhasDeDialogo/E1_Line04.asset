@@ -13,4 +13,4 @@ MonoBehaviour:
   m_Name: E1_Line04
   m_EditorClassIdentifier: 
   m_Speaker: {fileID: 11400000, guid: 2e580a1b264fd974985710912d857142, type: 2}
-  m_Text: "Estou vendo... De qualquer forma, obrigado por \rter ajudado minha filha."
+  m_Text: Estou vendo... De qualquer forma, obrigado por ter ajudado minha filha.

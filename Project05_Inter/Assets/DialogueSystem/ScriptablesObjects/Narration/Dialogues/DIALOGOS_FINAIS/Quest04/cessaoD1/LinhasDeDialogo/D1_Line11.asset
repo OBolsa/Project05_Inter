@@ -13,5 +13,5 @@ MonoBehaviour:
   m_Name: D1_Line11
   m_EditorClassIdentifier: 
   m_Speaker: {fileID: 11400000, guid: ccad5da843ab58f4d9f26075ab69927b, type: 2}
-  m_Text: "Sabe, n\xE3o demorou para eu me ver buscando \rref\xFAgio longe. Com sorte
-    eu ainda conseguia um \rtrocado aqui e outro ali,"
+  m_Text: "Sabe, n\xE3o demorou para eu me ver buscando ref\xFAgio longe. Com sorte
+    eu ainda conseguia um trocado aqui e outro ali,"

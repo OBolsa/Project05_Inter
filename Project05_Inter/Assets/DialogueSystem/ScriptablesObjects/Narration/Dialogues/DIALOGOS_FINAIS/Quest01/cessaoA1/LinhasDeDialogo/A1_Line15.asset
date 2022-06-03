@@ -13,5 +13,5 @@ MonoBehaviour:
   m_Name: A1_Line15
   m_EditorClassIdentifier: 
   m_Speaker: {fileID: 11400000, guid: f8e178efedde2f64bb06760438c0d6f5, type: 2}
-  m_Text: "Disponha as cartas! Mostrarei que mesmo aqui \rplantado dia e noite ainda
-    n\xE3o estou enferrujado \ro bastante para perder para qualquer um."
+  m_Text: "Disponha as cartas! Mostrarei que mesmo aqui plantado dia e noite ainda
+    n\xE3o estou enferrujado o bastante para perder para qualquer um."

@@ -13,4 +13,4 @@ MonoBehaviour:
   m_Name: B1_Line10
   m_EditorClassIdentifier: 
   m_Speaker: {fileID: 11400000, guid: c8aefc08ca5e5a04295d3391a1dee5c1, type: 2}
-  m_Text: "*Parece que ele n\xE3o me reconheceu\r"
+  m_Text: "*Parece que ele n\xE3o me reconheceu"

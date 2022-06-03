@@ -12,5 +12,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c31385de04dc03a4e8a8aebb89cf066d, type: 3}
   m_Name: F1_Line05
   m_EditorClassIdentifier: 
-  m_Speaker: {fileID: 0}
-  m_Text: "Esse \xE9 um jeito meio ex\xF3tico de se agradecer. Hahaha!\r"
+  m_Speaker: {fileID: 11400000, guid: ccad5da843ab58f4d9f26075ab69927b, type: 2}
+  m_Text: "Esse \xE9 um jeito meio ex\xF3tico de se agradecer. Hahaha!"

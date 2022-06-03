@@ -13,5 +13,5 @@ MonoBehaviour:
   m_Name: B1_Line04
   m_EditorClassIdentifier: 
   m_Speaker: {fileID: 11400000, guid: 02fbe1a12b355104e992d142db441511, type: 2}
-  m_Text: "Mas recentemente isso mudou, e agora poucos aqui \rrestaram para contar
+  m_Text: "Mas recentemente isso mudou, e agora poucos aqui restaram para contar
     essa hist\xF3ria."

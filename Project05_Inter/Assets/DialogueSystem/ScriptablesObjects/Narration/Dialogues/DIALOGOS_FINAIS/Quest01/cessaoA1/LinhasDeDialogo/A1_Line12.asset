@@ -13,5 +13,5 @@ MonoBehaviour:
   m_Name: A1_Line12
   m_EditorClassIdentifier: 
   m_Speaker: {fileID: 11400000, guid: f8e178efedde2f64bb06760438c0d6f5, type: 2}
-  m_Text: "Hmmm... voc\xEA n\xE3o me parece ser do tipo que sabe \rjogar l\xE1 muito
-    bem... Eu, por outro lado, \rcostumava ser \xF3timo"
+  m_Text: "Hmmm... voc\xEA n\xE3o me parece ser do tipo que sabe jogar l\xE1 muito
+    bem... Eu, por outro lado, costumava ser \xF3timo."

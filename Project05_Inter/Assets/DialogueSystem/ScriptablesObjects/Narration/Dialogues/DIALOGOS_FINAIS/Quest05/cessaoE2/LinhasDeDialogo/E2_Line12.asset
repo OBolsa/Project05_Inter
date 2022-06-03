@@ -13,5 +13,5 @@ MonoBehaviour:
   m_Name: E2_Line12
   m_EditorClassIdentifier: 
   m_Speaker: {fileID: 11400000, guid: c8aefc08ca5e5a04295d3391a1dee5c1, type: 2}
-  m_Text: "Ah! Ha! Ha! Ent\xE3o \xE9 isso... Bom, acho que tenho \rum tempo sim para
-    aceitar o seu desafio, vamos \rnos divertir um pouco."
+  m_Text: "Ah! Ha! Ha! Ent\xE3o \xE9 isso... Bom, acho que tenho um tempo sim para
+    aceitar o seu desafio, vamos nos divertir um pouco."

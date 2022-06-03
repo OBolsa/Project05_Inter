@@ -13,5 +13,5 @@ MonoBehaviour:
   m_Name: G1_Line20
   m_EditorClassIdentifier: 
   m_Speaker: {fileID: 11400000, guid: 02fbe1a12b355104e992d142db441511, type: 2}
-  m_Text: "Mas no fim, o que mais sinto falta \xE9 daqueles \rque eu podia compartilhar
+  m_Text: "Mas no fim, o que mais sinto falta \xE9 daqueles que eu podia compartilhar
     esses momentos."

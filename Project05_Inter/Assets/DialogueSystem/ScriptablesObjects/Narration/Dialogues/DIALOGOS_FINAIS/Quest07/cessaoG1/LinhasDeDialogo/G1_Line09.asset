@@ -13,5 +13,5 @@ MonoBehaviour:
   m_Name: G1_Line09
   m_EditorClassIdentifier: 
   m_Speaker: {fileID: 11400000, guid: 02fbe1a12b355104e992d142db441511, type: 2}
-  m_Text: "Por\xE9m mais estranho ainda \xE9 me devolver \ra m\xE1scara. N\xE3o vieste
-    em rancor? Ou ent\xE3o por \r\xF3dio?"
+  m_Text: "Por\xE9m mais estranho ainda \xE9 me devolver a m\xE1scara. N\xE3o vieste
+    em rancor? Ou ent\xE3o por \xF3dio?"

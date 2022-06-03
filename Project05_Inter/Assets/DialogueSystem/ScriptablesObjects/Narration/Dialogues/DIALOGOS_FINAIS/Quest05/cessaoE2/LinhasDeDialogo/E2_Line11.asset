@@ -13,5 +13,5 @@ MonoBehaviour:
   m_Name: E2_Line11
   m_EditorClassIdentifier: 
   m_Speaker: {fileID: 11400000, guid: 2e580a1b264fd974985710912d857142, type: 2}
-  m_Text: "Ser\xE1 que concederias a mim uma boa partida? N\xE3o \rsei se \xE9s um
-    expert, mas adoro ver como \rdiferentes pessoas jogam."
+  m_Text: "Ser\xE1 que concederias a mim uma boa partida? N\xE3o sei se \xE9s um
+    expert, mas adoro ver como diferentes pessoas jogam."

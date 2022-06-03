@@ -13,6 +13,6 @@ MonoBehaviour:
   m_Name: Intro_Line02
   m_EditorClassIdentifier: 
   m_Speaker: {fileID: 11400000, guid: b77e9eb0bf4da0644a9c8c833fdd9d70, type: 2}
-  m_Text: "Em um ato de ousadia, ele ent\xE3o a desafiou para uma partida de carteado;\r
+  m_Text: "Em um ato de ousadia, ele ent\xE3o a desafiou para uma partida de carteado;
     em um ato de ambi\xE7\xE3o, exigiu um amuleto que o protegesse dela ap\xF3s vencer
-    a aposta.\r"
+    a aposta."

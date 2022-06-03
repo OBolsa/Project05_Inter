@@ -13,5 +13,5 @@ MonoBehaviour:
   m_Name: G1_Line22
   m_EditorClassIdentifier: 
   m_Speaker: {fileID: 11400000, guid: 02fbe1a12b355104e992d142db441511, type: 2}
-  m_Text: "Talvez se a peste se acalmasse eu poderia pensar \rnisso. Mas n\xE3o me
-    acostumei ainda com a dor da \rperda.\r\n"
+  m_Text: "Talvez se a peste se acalmasse eu poderia pensar nisso. Mas n\xE3o me
+    acostumei ainda com a dor da perda.\n"

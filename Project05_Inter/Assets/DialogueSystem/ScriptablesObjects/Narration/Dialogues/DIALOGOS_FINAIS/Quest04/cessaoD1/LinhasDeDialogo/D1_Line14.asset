@@ -13,4 +13,4 @@ MonoBehaviour:
   m_Name: D1_Line14
   m_EditorClassIdentifier: 
   m_Speaker: {fileID: 11400000, guid: ccad5da843ab58f4d9f26075ab69927b, type: 2}
-  m_Text: "Aah!! Mil desculpas! \xE0s vezes eu falo demais...\r"
+  m_Text: "Aah!! Mil desculpas! \xE0s vezes eu falo demais..."

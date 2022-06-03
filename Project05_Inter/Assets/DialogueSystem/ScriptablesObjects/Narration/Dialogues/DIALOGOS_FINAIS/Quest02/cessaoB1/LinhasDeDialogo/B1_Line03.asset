@@ -13,5 +13,5 @@ MonoBehaviour:
   m_Name: B1_Line03
   m_EditorClassIdentifier: 
   m_Speaker: {fileID: 11400000, guid: 02fbe1a12b355104e992d142db441511, type: 2}
-  m_Text: "At\xE9 pouco tempo ainda podia-se dizer que este \rera um lugar cheio
-    de vida, com muitas pessoas, \rmuitos fi\xE9is...\r"
+  m_Text: "At\xE9 pouco tempo ainda podia-se dizer que este era um lugar cheio de
+    vida, com muitas pessoas, muitos fi\xE9is..."

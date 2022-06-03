@@ -13,5 +13,5 @@ MonoBehaviour:
   m_Name: G1_Line17
   m_EditorClassIdentifier: 
   m_Speaker: {fileID: 11400000, guid: 02fbe1a12b355104e992d142db441511, type: 2}
-  m_Text: "Sinto um enorme vazio. Um que clama \rpor tudo aquilo que me era importante
-    mas \rn\xE3o notei a tempo."
+  m_Text: "Sinto um enorme vazio. Um que clama por tudo aquilo que me era importante
+    mas n\xE3o notei a tempo."

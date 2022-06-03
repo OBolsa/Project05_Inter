@@ -13,5 +13,4 @@ MonoBehaviour:
   m_Name: B1_Line12
   m_EditorClassIdentifier: 
   m_Speaker: {fileID: 11400000, guid: 02fbe1a12b355104e992d142db441511, type: 2}
-  m_Text: "Um amigo, \xE9? Hum... Temo que me toma por outra \rpessoa, n\xE3o te
-    conhe\xE7o. \r"
+  m_Text: "Um amigo, \xE9? Hum... Temo que me toma por outra pessoa, n\xE3o te conhe\xE7o. "

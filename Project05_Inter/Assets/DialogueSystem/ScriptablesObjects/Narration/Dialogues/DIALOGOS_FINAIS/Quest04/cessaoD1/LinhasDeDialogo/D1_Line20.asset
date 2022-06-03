@@ -13,5 +13,5 @@ MonoBehaviour:
   m_Name: D1_Line20
   m_EditorClassIdentifier: 
   m_Speaker: {fileID: 11400000, guid: c8aefc08ca5e5a04295d3391a1dee5c1, type: 2}
-  m_Text: "Sim, sei do que est\xE1 falando. \xC9s deveras \rsolicita, agrade\xE7o.
-    Em breve retornarei com a \rresina.\r"
+  m_Text: "Sim, sei do que est\xE1 falando. \xC9s deveras solicita, agrade\xE7o.
+    Em breve retornarei com a resina."

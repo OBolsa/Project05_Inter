@@ -13,4 +13,4 @@ MonoBehaviour:
   m_Name: B1_Line02
   m_EditorClassIdentifier: 
   m_Speaker: {fileID: 11400000, guid: 02fbe1a12b355104e992d142db441511, type: 2}
-  m_Text: "Do que est\xE1 falando? O monast\xE9rio nunca esteve \rt\xE3o vazio. "
+  m_Text: "Do que est\xE1 falando? O monast\xE9rio nunca esteve t\xE3o vazio."

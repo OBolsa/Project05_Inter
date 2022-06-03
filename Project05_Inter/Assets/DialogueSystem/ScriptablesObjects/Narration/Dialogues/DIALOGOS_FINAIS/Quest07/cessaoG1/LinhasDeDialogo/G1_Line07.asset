@@ -13,4 +13,4 @@ MonoBehaviour:
   m_Name: G1_Line07
   m_EditorClassIdentifier: 
   m_Speaker: {fileID: 11400000, guid: 02fbe1a12b355104e992d142db441511, type: 2}
-  m_Text: "Apenas penso em qual ser\xE1 sua inten\xE7\xE3o vindo me \rver.\n"
+  m_Text: "Apenas penso em qual ser\xE1 sua inten\xE7\xE3o vindo me ver.\n"

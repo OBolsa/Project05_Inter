@@ -13,5 +13,5 @@ MonoBehaviour:
   m_Name: Intro_Line03
   m_EditorClassIdentifier: 
   m_Speaker: {fileID: 11400000, guid: b77e9eb0bf4da0644a9c8c833fdd9d70, type: 2}
-  m_Text: "E assim se fez valer o acordo com a entidade.\r Mas n\xE3o h\xE1 barganha
+  m_Text: "E assim se fez valer o acordo com a entidade. Mas n\xE3o h\xE1 barganha
     que seja feita para com a Morte."

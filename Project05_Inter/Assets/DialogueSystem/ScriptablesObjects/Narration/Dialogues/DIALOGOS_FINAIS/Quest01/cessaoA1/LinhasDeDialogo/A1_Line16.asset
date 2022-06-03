@@ -13,5 +13,5 @@ MonoBehaviour:
   m_Name: A1_Line16
   m_EditorClassIdentifier: 
   m_Speaker: {fileID: 11400000, guid: c8aefc08ca5e5a04295d3391a1dee5c1, type: 2}
-  m_Text: "Falou bem! Mas, sabe de uma? Essa ocasi\xE3o pede \ruma aposta. \rUma
-    vez vencendo, por fim atravessarei esse \rport\xE3o, combinado?"
+  m_Text: "Falou bem! Mas, sabe de uma? Essa ocasi\xE3o pede uma aposta. Uma vez
+    vencendo, por fim atravessarei esse port\xE3o, combinado?"

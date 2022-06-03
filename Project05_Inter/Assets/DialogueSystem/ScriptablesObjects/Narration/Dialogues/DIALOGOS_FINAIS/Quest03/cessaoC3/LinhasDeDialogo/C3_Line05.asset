@@ -13,5 +13,5 @@ MonoBehaviour:
   m_Name: C3_Line05
   m_EditorClassIdentifier: 
   m_Speaker: {fileID: 11400000, guid: c8aefc08ca5e5a04295d3391a1dee5c1, type: 2}
-  m_Text: "Essa m\xE1scara n\xE3o era sua, n\xE3o \xE9 verdade? \xC9 feio \restragar
-    as coisas dos outros.\r"
+  m_Text: "Essa m\xE1scara n\xE3o era sua, n\xE3o \xE9 verdade? \xC9 feio estragar
+    as coisas dos outros."

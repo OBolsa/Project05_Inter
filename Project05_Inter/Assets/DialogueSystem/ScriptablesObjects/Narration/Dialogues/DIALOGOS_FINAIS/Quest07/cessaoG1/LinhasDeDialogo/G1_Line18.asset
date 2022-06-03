@@ -13,4 +13,4 @@ MonoBehaviour:
   m_Name: G1_Line18
   m_EditorClassIdentifier: 
   m_Speaker: {fileID: 11400000, guid: 02fbe1a12b355104e992d142db441511, type: 2}
-  m_Text: "A peste levou a muitos, e, com eles, toda a \rlux\xFAria que eu amava."
+  m_Text: "A peste levou a muitos, e, com eles, toda a lux\xFAria que eu amava."

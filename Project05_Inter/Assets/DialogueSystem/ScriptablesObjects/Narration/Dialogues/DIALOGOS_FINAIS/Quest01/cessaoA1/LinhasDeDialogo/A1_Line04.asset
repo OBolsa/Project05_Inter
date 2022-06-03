@@ -13,5 +13,5 @@ MonoBehaviour:
   m_Name: A1_Line04
   m_EditorClassIdentifier: 
   m_Speaker: {fileID: 11400000, guid: f8e178efedde2f64bb06760438c0d6f5, type: 2}
-  m_Text: "Pareceria muito suspeito se isso acontecesse, \rn\xE3o \xE9 verdade? Ah!
+  m_Text: "Pareceria muito suspeito se isso acontecesse, n\xE3o \xE9 verdade? Ah!
     Ah! Ah!"

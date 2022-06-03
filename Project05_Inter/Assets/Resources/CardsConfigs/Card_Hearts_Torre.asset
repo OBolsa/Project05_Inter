@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   cardName: VXI - A Torre
   cardDescription: "O advers\xE1rio perder\xE1 1 ponto para cada carta que seja de
-    um naipe diferente dessa"
+    um naipe diferente de Copas."
   cardImage: {fileID: 0}
   cardValue: 0
   majorArcane: 1

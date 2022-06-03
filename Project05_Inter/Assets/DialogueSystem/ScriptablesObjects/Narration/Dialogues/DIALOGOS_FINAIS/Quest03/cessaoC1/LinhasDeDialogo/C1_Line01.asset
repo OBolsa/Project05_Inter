@@ -13,4 +13,4 @@ MonoBehaviour:
   m_Name: C1_Line01
   m_EditorClassIdentifier: 
   m_Speaker: {fileID: 11400000, guid: c8aefc08ca5e5a04295d3391a1dee5c1, type: 2}
-  m_Text: "*Ah, h\xE1 quanto tempo... Como ser\xE1 que ele foi \rperd\xEA-la? "
+  m_Text: "*Ah, h\xE1 quanto tempo... Como ser\xE1 que ele foi perd\xEA-la?"

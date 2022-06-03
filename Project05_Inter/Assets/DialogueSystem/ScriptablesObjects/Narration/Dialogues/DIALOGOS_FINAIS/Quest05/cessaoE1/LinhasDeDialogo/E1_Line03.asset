@@ -13,4 +13,4 @@ MonoBehaviour:
   m_Name: E1_Line03
   m_EditorClassIdentifier: 
   m_Speaker: {fileID: 11400000, guid: c8aefc08ca5e5a04295d3391a1dee5c1, type: 2}
-  m_Text: "Sou um andarilho s\xF3 de passagem.\r"
+  m_Text: "Sou um andarilho s\xF3 de passagem."

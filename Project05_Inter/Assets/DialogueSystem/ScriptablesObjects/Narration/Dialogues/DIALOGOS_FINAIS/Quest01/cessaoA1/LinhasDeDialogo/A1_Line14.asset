@@ -13,4 +13,4 @@ MonoBehaviour:
   m_Name: A1_Line14
   m_EditorClassIdentifier: 
   m_Speaker: {fileID: 11400000, guid: c8aefc08ca5e5a04295d3391a1dee5c1, type: 2}
-  m_Text: "Atrevimento admir\xE1vel. Mas tu n\xE3o \xE9s tudo isso \rque dizes.\r"
+  m_Text: "Atrevimento admir\xE1vel. Mas tu n\xE3o \xE9s tudo isso que dizes."

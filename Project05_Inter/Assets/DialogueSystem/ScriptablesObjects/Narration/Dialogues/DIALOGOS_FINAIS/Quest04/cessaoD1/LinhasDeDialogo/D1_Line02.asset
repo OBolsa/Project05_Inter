@@ -13,5 +13,5 @@ MonoBehaviour:
   m_Name: D1_Line02
   m_EditorClassIdentifier: 
   m_Speaker: {fileID: 11400000, guid: c8aefc08ca5e5a04295d3391a1dee5c1, type: 2}
-  m_Text: "Na verdade, estou. Conheces algu\xE9m que possa \rrestaurar o aspecto
-    desse item? Ele sofreu um \rpouco e agora est\xE1 horr\xEDvel. "
+  m_Text: "Na verdade, estou. Conheces algu\xE9m que possa restaurar o aspecto desse
+    item? Ele sofreu um pouco e agora est\xE1 horr\xEDvel."

@@ -13,5 +13,4 @@ MonoBehaviour:
   m_Name: G1_Line03
   m_EditorClassIdentifier: 
   m_Speaker: {fileID: 11400000, guid: c8aefc08ca5e5a04295d3391a1dee5c1, type: 2}
-  m_Text: "\xC9 claro que sim. Afinal, fui eu quem te deu essa \rm\xE1scara anos
-    atr\xE1s.\r"
+  m_Text: "\xC9 claro que sim. Afinal, fui eu quem te deu essa m\xE1scara anos atr\xE1s."

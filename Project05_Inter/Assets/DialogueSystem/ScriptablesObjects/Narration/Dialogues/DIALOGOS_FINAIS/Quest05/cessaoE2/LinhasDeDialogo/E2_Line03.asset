@@ -13,5 +13,5 @@ MonoBehaviour:
   m_Name: E2_Line03
   m_EditorClassIdentifier: 
   m_Speaker: {fileID: 11400000, guid: 2e580a1b264fd974985710912d857142, type: 2}
-  m_Text: "Pois bem, veio falar com a pessoa certa! Se n\xE3o \rme engano ainda guardo
-    um pouco disso nos \restoques que tenho no calabou\xE7o."
+  m_Text: "Pois bem, veio falar com a pessoa certa! Se n\xE3o me engano ainda guardo
+    um pouco disso nos estoques que tenho no calabou\xE7o."

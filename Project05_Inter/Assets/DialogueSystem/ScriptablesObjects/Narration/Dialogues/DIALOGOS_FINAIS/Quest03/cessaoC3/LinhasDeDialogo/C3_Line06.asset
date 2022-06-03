@@ -13,5 +13,5 @@ MonoBehaviour:
   m_Name: C3_Line06
   m_EditorClassIdentifier: 
   m_Speaker: {fileID: 11400000, guid: e5e9f2b17e87b0b40b0fa57fe8c515ab, type: 2}
-  m_Text: "Como que o mo\xE7o sabe que eu peguei ela quando o \r\u2018homi\u2019
-    de casaco n\xE3o via??\r"
+  m_Text: "Como que o mo\xE7o sabe que eu peguei ela quando o \u2018homi\u2019 de
+    casaco n\xE3o via??"

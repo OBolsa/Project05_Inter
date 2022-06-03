@@ -13,5 +13,5 @@ MonoBehaviour:
   m_Name: D1_Line09
   m_EditorClassIdentifier: 
   m_Speaker: {fileID: 11400000, guid: ccad5da843ab58f4d9f26075ab69927b, type: 2}
-  m_Text: "Ah, sim! Eu era uma contratada de mecena \renquanto ainda vivia na cidade,
-    tinha at\xE9 bom \rnome."
+  m_Text: "Ah, sim! Eu era uma contratada de mecena enquanto ainda vivia na cidade,
+    tinha at\xE9 bom nome."

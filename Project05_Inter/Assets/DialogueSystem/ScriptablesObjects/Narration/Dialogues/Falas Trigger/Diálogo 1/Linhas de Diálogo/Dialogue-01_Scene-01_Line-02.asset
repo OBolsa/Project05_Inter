@@ -13,4 +13,4 @@ MonoBehaviour:
   m_Name: Dialogue-01_Scene-01_Line-02
   m_EditorClassIdentifier: 
   m_Speaker: {fileID: 11400000, guid: de02235a87633ea448491f7dccca7ce1, type: 2}
-  m_Text: 
+  m_Text: "*A prop\xF3sito, como foi que ela ficou assim? Est\xE1 destru\xEDda..."

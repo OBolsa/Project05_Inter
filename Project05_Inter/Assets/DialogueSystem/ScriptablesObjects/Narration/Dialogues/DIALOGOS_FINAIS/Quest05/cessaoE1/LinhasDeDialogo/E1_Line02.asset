@@ -13,4 +13,4 @@ MonoBehaviour:
   m_Name: E1_Line02
   m_EditorClassIdentifier: 
   m_Speaker: {fileID: 11400000, guid: 2e580a1b264fd974985710912d857142, type: 2}
-  m_Text: "Voc\xEA n\xE3o \xE9s daqui, n\xE3o \xE9 mesmo homem? Quem \xE9s \rtu?"
+  m_Text: "Voc\xEA n\xE3o \xE9s daqui, n\xE3o \xE9 mesmo homem? Quem \xE9s tu?"

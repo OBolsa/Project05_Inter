@@ -13,5 +13,5 @@ MonoBehaviour:
   m_Name: C3_Line09
   m_EditorClassIdentifier: 
   m_Speaker: {fileID: 11400000, guid: c8aefc08ca5e5a04295d3391a1dee5c1, type: 2}
-  m_Text: "*Eu n\xE3o quero devolv\xEA-la nesse estado. Ser\xE1 que \raqui dentro
-    eu encontro algu\xE9m que possa \rconsert\xE1-la?\r"
+  m_Text: "*Eu n\xE3o quero devolv\xEA-la nesse estado. Ser\xE1 que aqui dentro eu
+    encontro algu\xE9m que possa consert\xE1-la?"

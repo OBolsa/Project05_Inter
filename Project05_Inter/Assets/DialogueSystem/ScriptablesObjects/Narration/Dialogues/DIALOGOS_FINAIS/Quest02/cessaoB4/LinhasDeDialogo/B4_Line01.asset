@@ -13,4 +13,4 @@ MonoBehaviour:
   m_Name: B4_Line01
   m_EditorClassIdentifier: 
   m_Speaker: {fileID: 11400000, guid: 2e580a1b264fd974985710912d857142, type: 2}
-  m_Text: "Onde ser\xE1 que minha filha est\xE1?\r"
+  m_Text: "Onde ser\xE1 que minha filha est\xE1?"

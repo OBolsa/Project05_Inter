@@ -13,5 +13,5 @@ MonoBehaviour:
   m_Name: A1_Line09
   m_EditorClassIdentifier: 
   m_Speaker: {fileID: 11400000, guid: c8aefc08ca5e5a04295d3391a1dee5c1, type: 2}
-  m_Text: "Deixe-me entrar e deixo-te viver por mais um tempo, certo? Quero ainda
-    \rhoje jogar uma partida daquelas com esse meu \ramigo.\r"
+  m_Text: Deixe-me entrar e deixo-te viver por mais um tempo, certo? Quero ainda
+    hoje jogar uma partida daquelas com esse meu amigo.

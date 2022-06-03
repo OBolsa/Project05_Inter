@@ -13,9 +13,10 @@ MonoBehaviour:
   m_Name: Card_Diamonds_Sol
   m_EditorClassIdentifier: 
   cardName: XIX - O Sol
-  cardDescription: 
+  cardDescription: "Ganha pontos igual a todas as cartas que valem mais do que 3
+    pontos do campo advers\xE1rio."
   cardImage: {fileID: 0}
   cardValue: 0
   majorArcane: 1
   cardSuit: 1
-  effects: {fileID: 6782159985347266556, guid: 54cafa5b6a217644bbb446866583b918, type: 3}
+  effects: {fileID: 6782159985347266556, guid: fc10be30cff6bce47b5244b3ebc83c00, type: 3}

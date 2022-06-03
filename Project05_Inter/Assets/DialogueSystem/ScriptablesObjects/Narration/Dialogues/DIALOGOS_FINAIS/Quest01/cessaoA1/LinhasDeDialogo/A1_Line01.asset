@@ -13,4 +13,4 @@ MonoBehaviour:
   m_Name: A1_Line01
   m_EditorClassIdentifier: 
   m_Speaker: {fileID: 11400000, guid: f8e178efedde2f64bb06760438c0d6f5, type: 2}
-  m_Text: "Engra\xE7ado... Trabalho nesse posto h\xE1 anos, j\xE1 vi muitas \rcoisas. "
+  m_Text: "Engra\xE7ado... Trabalho nesse posto h\xE1 anos, j\xE1 vi muitas coisas."

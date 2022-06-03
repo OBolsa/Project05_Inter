@@ -14,4 +14,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Speaker: {fileID: 11400000, guid: ccad5da843ab58f4d9f26075ab69927b, type: 2}
   m_Text: "Essa resina \xE9 uma subst\xE2ncia \xE2mbar, perfeita para a nossa amiguinha
-    aqui, porque \xE9 imperme\xE1vel e seca em \rcontato com o ar.\r"
+    aqui, porque \xE9 imperme\xE1vel e seca em contato com o ar."

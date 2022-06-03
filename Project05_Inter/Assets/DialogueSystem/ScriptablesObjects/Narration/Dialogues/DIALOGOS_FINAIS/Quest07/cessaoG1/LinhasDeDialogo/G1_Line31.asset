@@ -13,5 +13,5 @@ MonoBehaviour:
   m_Name: G1_Line31
   m_EditorClassIdentifier: 
   m_Speaker: {fileID: 11400000, guid: 02fbe1a12b355104e992d142db441511, type: 2}
-  m_Text: "Se isso n\xE3o demonstra seu rancor pelo o que \raconteceu no passado,
-    eu n\xE3o sei o que o faria."
+  m_Text: "Se isso n\xE3o demonstra seu rancor pelo o que aconteceu no passado, eu
+    n\xE3o sei o que o faria."

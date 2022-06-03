@@ -13,5 +13,5 @@ MonoBehaviour:
   m_Name: E2_Line04
   m_EditorClassIdentifier: 
   m_Speaker: {fileID: 11400000, guid: 2e580a1b264fd974985710912d857142, type: 2}
-  m_Text: "\xC9 a primeira constru\xE7\xE3o \xE0 direita da entrada do \rmonast\xE9rio.
-    L\xE1 voc\xEA deve entrar e ir at\xE9 a \r\xFAltima cela."
+  m_Text: "\xC9 a primeira constru\xE7\xE3o \xE0 direita da entrada do monast\xE9rio.
+    L\xE1 voc\xEA deve entrar e ir at\xE9 a \xFAltima cela."

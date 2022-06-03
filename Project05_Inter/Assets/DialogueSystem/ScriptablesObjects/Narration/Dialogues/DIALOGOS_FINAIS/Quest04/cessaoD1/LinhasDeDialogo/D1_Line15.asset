@@ -13,5 +13,5 @@ MonoBehaviour:
   m_Name: D1_Line15
   m_EditorClassIdentifier: 
   m_Speaker: {fileID: 11400000, guid: c8aefc08ca5e5a04295d3391a1dee5c1, type: 2}
-  m_Text: "Ah! ha! ha! Tudo bem, adoro conversar. E \rgosto mais ainda de ouvir mais
-    sobre o interior \rdos human- Digo, das pessoas..."
+  m_Text: Ah! ha! ha! Tudo bem, adoro conversar. E gosto mais ainda de ouvir mais
+    sobre o interior dos human- Digo, das pessoas...

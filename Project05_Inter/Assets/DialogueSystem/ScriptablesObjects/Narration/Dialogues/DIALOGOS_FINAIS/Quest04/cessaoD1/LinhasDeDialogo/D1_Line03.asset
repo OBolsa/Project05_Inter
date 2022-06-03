@@ -13,5 +13,5 @@ MonoBehaviour:
   m_Name: D1_Line03
   m_EditorClassIdentifier: 
   m_Speaker: {fileID: 11400000, guid: ccad5da843ab58f4d9f26075ab69927b, type: 2}
-  m_Text: "Nossa, mas que m\xE1scara peculiar! Me permite dar \ruma olhada mais de
+  m_Text: "Nossa, mas que m\xE1scara peculiar! Me permite dar uma olhada mais de
     perto?"

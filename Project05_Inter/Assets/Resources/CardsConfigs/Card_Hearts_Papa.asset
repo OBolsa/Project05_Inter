@@ -13,8 +13,7 @@ MonoBehaviour:
   m_Name: Card_Hearts_Papa
   m_EditorClassIdentifier: 
   cardName: V - O Papa
-  cardDescription: "Adicione aos seus pontos tamb\xE9m as cartas de de naipe igual
-    a essa do seu advers\xE1rio"
+  cardDescription: "Ganhe os pontos das cartas de Copas do seu advers\xE1rio."
   cardImage: {fileID: 0}
   cardValue: 0
   majorArcane: 1

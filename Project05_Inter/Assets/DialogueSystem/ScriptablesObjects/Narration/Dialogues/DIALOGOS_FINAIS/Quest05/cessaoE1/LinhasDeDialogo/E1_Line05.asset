@@ -13,5 +13,5 @@ MonoBehaviour:
   m_Name: E1_Line05
   m_EditorClassIdentifier: 
   m_Speaker: {fileID: 11400000, guid: 2e580a1b264fd974985710912d857142, type: 2}
-  m_Text: "Se precisar de algo \rpode me pedir que, em agradecimento, eu verei o
-    \r\nque posso fazer."
+  m_Text: Se precisar de algo pode me pedir que, em agradecimento, eu verei o que
+    posso fazer.

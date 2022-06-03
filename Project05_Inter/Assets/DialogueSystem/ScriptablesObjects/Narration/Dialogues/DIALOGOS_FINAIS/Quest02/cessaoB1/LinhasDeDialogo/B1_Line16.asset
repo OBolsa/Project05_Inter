@@ -13,4 +13,4 @@ MonoBehaviour:
   m_Name: B1_Line16
   m_EditorClassIdentifier: 
   m_Speaker: {fileID: 11400000, guid: 02fbe1a12b355104e992d142db441511, type: 2}
-  m_Text: "*Ele fala como se soubesse do que se trata\r."
+  m_Text: '*Ele fala como se soubesse do que se trata.'

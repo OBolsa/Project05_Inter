@@ -13,4 +13,4 @@ MonoBehaviour:
   m_Name: E2_Line01
   m_EditorClassIdentifier: 
   m_Speaker: {fileID: 11400000, guid: 2e580a1b264fd974985710912d857142, type: 2}
-  m_Text: "E ent\xE3o? Descobriu algo de que precisas?\r"
+  m_Text: "E ent\xE3o? Descobriu algo de que precisas?"

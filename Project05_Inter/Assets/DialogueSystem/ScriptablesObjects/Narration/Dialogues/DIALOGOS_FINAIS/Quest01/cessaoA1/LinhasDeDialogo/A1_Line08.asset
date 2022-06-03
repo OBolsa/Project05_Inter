@@ -13,5 +13,5 @@ MonoBehaviour:
   m_Name: A1_Line08
   m_EditorClassIdentifier: 
   m_Speaker: {fileID: 11400000, guid: c8aefc08ca5e5a04295d3391a1dee5c1, type: 2}
-  m_Text: "Eh! He! Voc\xEA n\xE3o est\xE1 entendendo sua real \rposi\xE7\xE3o. Mas
-    bem, j\xE1 que insiste tanto em manter \ra pose serei direto:"
+  m_Text: "Eh! He! Voc\xEA n\xE3o est\xE1 entendendo sua real posi\xE7\xE3o. Mas
+    bem, j\xE1 que insiste tanto em manter a pose serei direto:"

@@ -13,5 +13,5 @@ MonoBehaviour:
   m_Name: D1_Line10
   m_EditorClassIdentifier: 
   m_Speaker: {fileID: 11400000, guid: ccad5da843ab58f4d9f26075ab69927b, type: 2}
-  m_Text: "Mas isso foi anos atr\xE1s. Com a chegada dessa \rdoen\xE7a a arte passou
-    a ser \rconsiderada por muitos como algo sup\xE9rfluo..."
+  m_Text: "Mas isso foi anos atr\xE1s. Com a chegada dessa doen\xE7a a arte passou
+    a ser considerada por muitos como algo sup\xE9rfluo..."

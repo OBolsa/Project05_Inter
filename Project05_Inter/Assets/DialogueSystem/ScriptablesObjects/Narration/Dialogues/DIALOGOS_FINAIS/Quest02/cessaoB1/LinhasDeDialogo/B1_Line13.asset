@@ -13,5 +13,5 @@ MonoBehaviour:
   m_Name: B1_Line13
   m_EditorClassIdentifier: 
   m_Speaker: {fileID: 11400000, guid: 02fbe1a12b355104e992d142db441511, type: 2}
-  m_Text: "Agora, se puder me dar licen\xE7a, h\xE1 pouco me dei \rconta que perdi
-    um algo importante, n\xE3o \restou me sentindo nada bem.\r"
+  m_Text: "Agora, se puder me dar licen\xE7a, h\xE1 pouco me dei conta que perdi
+    um algo importante, n\xE3o estou me sentindo nada bem."

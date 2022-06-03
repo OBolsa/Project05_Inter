@@ -13,7 +13,8 @@ MonoBehaviour:
   m_Name: Card_Spades_Forca
   m_EditorClassIdentifier: 
   cardName: "XI - A For\xE7a"
-  cardDescription: 
+  cardDescription: "O jogador ganha 1 ponto para cada carta em seu pr\xF3prio campo
+    que seja do naipe de Espadas."
   cardImage: {fileID: 0}
   cardValue: 0
   majorArcane: 1

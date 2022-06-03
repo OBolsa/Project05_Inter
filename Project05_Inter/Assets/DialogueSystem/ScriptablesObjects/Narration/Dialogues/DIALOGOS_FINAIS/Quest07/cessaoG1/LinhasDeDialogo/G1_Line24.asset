@@ -13,5 +13,5 @@ MonoBehaviour:
   m_Name: G1_Line24
   m_EditorClassIdentifier: 
   m_Speaker: {fileID: 11400000, guid: c8aefc08ca5e5a04295d3391a1dee5c1, type: 2}
-  m_Text: "N\xE3o sou eu que lhe darei tais \rrespostas, mas fico intrigado em ver
-    seu \r\namadurecimento."
+  m_Text: "N\xE3o sou eu que lhe darei tais respostas, mas fico intrigado em ver
+    seu amadurecimento."

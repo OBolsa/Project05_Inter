@@ -13,7 +13,8 @@ MonoBehaviour:
   m_Name: Card_Hearts_Justica
   m_EditorClassIdentifier: 
   cardName: "VIII - A Justi\xE7a"
-  cardDescription: 
+  cardDescription: "O jogador ganha 1 ponto para cada carta em seu pr\xF3prio campo
+    que seja do naipe de Copas."
   cardImage: {fileID: 0}
   cardValue: 0
   majorArcane: 1

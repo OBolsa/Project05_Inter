@@ -13,5 +13,5 @@ MonoBehaviour:
   m_Name: E2_Line10
   m_EditorClassIdentifier: 
   m_Speaker: {fileID: 11400000, guid: 2e580a1b264fd974985710912d857142, type: 2}
-  m_Text: "H\xE1 tempos que n\xE3o jogo mais \rcom algu\xE9m diferente das poucas
-    pessoas que restaram \rvivas aqui dentro do monast\xE9rio."
+  m_Text: "H\xE1 tempos que n\xE3o jogo mais com algu\xE9m diferente das poucas pessoas
+    que restaram vivas aqui dentro do monast\xE9rio."

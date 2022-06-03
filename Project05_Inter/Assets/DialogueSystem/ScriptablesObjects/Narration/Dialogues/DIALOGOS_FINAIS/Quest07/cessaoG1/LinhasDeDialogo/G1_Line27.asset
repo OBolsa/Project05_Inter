@@ -13,5 +13,5 @@ MonoBehaviour:
   m_Name: G1_Line27
   m_EditorClassIdentifier: 
   m_Speaker: {fileID: 11400000, guid: c8aefc08ca5e5a04295d3391a1dee5c1, type: 2}
-  m_Text: "Isso n\xE3o seria justo para com o nosso acordo. \rAgora que eu lhe devolvi
-    a m\xE1scara, proponho uma\r revanche."
+  m_Text: "Isso n\xE3o seria justo para com o nosso acordo. Agora que eu lhe devolvi
+    a m\xE1scara, proponho uma revanche."

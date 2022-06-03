@@ -13,5 +13,5 @@ MonoBehaviour:
   m_Name: F1_Line02
   m_EditorClassIdentifier: 
   m_Speaker: {fileID: 11400000, guid: ccad5da843ab58f4d9f26075ab69927b, type: 2}
-  m_Text: "\xD3timo! Enquanto voc\xEA o buscava j\xE1 tratei de \rlimpar a m\xE1scara
-    e deixar tudo preparado, o \rconserto n\xE3o deve demorar\r."
+  m_Text: "\xD3timo! Enquanto voc\xEA o buscava j\xE1 tratei de limpar a m\xE1scara
+    e deixar tudo preparado, o conserto n\xE3o deve demorar."

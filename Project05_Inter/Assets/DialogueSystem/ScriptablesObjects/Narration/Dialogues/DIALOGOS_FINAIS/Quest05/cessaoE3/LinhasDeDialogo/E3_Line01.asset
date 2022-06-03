@@ -13,5 +13,4 @@ MonoBehaviour:
   m_Name: E3_Line01
   m_EditorClassIdentifier: 
   m_Speaker: {fileID: 11400000, guid: 2e580a1b264fd974985710912d857142, type: 2}
-  m_Text: "Suas habilidades n\xE3o decepcionam de fato, \rparab\xE9ns pela vit\xF3ria.
-    \r"
+  m_Text: "Suas habilidades n\xE3o decepcionam de fato, parab\xE9ns pela vit\xF3ria."

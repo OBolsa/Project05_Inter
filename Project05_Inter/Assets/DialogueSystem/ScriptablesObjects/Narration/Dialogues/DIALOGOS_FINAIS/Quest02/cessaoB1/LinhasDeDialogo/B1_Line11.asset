@@ -13,5 +13,5 @@ MonoBehaviour:
   m_Name: B1_Line11
   m_EditorClassIdentifier: 
   m_Speaker: {fileID: 11400000, guid: c8aefc08ca5e5a04295d3391a1dee5c1, type: 2}
-  m_Text: "Sou apenas um andarilho. Mas al\xE9m disso tamb\xE9m \rsou um amigo que
+  m_Text: "Sou apenas um andarilho. Mas al\xE9m disso tamb\xE9m sou um amigo que
     veio te ver."

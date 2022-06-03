@@ -13,4 +13,4 @@ MonoBehaviour:
   m_Name: A2_Line01
   m_EditorClassIdentifier: 
   m_Speaker: {fileID: 11400000, guid: c8aefc08ca5e5a04295d3391a1dee5c1, type: 2}
-  m_Text: "\xC9, at\xE9 que foi legalzinho. Vou entrando, at\xE9 \rmais ver."
+  m_Text: "\xC9, at\xE9 que foi legalzinho. Vou entrando, at\xE9 mais ver."

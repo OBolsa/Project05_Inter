@@ -14,4 +14,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Speaker: {fileID: 11400000, guid: ccad5da843ab58f4d9f26075ab69927b, type: 2}
   m_Text: "O desenho dela \xE9 lindo. E um pouco macabro... Mas realmente, ela passou
-    por \rmaus bocados pelo visto. \n"
+    por maus bocados pelo visto.\n"

@@ -13,7 +13,8 @@ MonoBehaviour:
   m_Name: Card_Spades_Temperanca
   m_EditorClassIdentifier: 
   cardName: "XIV - A Temperan\xE7a"
-  cardDescription: 
+  cardDescription: "Ganhe 2 ponto para cada Arcano Maior no campo de seu advers\xE1rio.
+    Se conseguir ativar o efeito, ganha 2 pontos adicionais."
   cardImage: {fileID: 0}
   cardValue: 0
   majorArcane: 1

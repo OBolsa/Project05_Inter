@@ -13,5 +13,5 @@ MonoBehaviour:
   m_Name: Intro_Line01
   m_EditorClassIdentifier: 
   m_Speaker: {fileID: 11400000, guid: b77e9eb0bf4da0644a9c8c833fdd9d70, type: 2}
-  m_Text: "Certa vez, um sagaz apostador se viu perante a Morte. \rFoi repentino,
-    e tinha muito a perder, assim ele pensava. \r"
+  m_Text: Certa vez, um sagaz apostador se viu perante a Morte. Foi repentino, e
+    tinha muito a perder, assim ele pensava.

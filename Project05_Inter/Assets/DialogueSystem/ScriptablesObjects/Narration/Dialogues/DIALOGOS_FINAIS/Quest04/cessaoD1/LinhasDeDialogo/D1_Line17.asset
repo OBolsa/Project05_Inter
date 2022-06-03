@@ -13,5 +13,5 @@ MonoBehaviour:
   m_Name: D1_Line17
   m_EditorClassIdentifier: 
   m_Speaker: {fileID: 11400000, guid: ccad5da843ab58f4d9f26075ab69927b, type: 2}
-  m_Text: "Voltando a \rfalar da m\xE1scara, temo que precisarei de resina \r\npara
-    colar algumas partes."
+  m_Text: "Voltando a falar da m\xE1scara, temo que precisarei de resina para colar
+    algumas partes."

@@ -13,5 +13,5 @@ MonoBehaviour:
   m_Name: B1_Line06
   m_EditorClassIdentifier: 
   m_Speaker: {fileID: 11400000, guid: c8aefc08ca5e5a04295d3391a1dee5c1, type: 2}
-  m_Text: "Acho que tens raz\xE3o, a peste n\xE3o descansa, e com \rela, as pessoas
+  m_Text: "Acho que tens raz\xE3o, a peste n\xE3o descansa, e com ela, as pessoas
     tamb\xE9m n\xE3o tem esse direito."

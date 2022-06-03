@@ -13,5 +13,5 @@ MonoBehaviour:
   m_Name: B1_Line05
   m_EditorClassIdentifier: 
   m_Speaker: {fileID: 11400000, guid: 02fbe1a12b355104e992d142db441511, type: 2}
-  m_Text: "A temperatura pode ser n\xE3o t\xE3o fria como nas \rcidades ao norte,
-    mas o ambiente vai de mal a \rpior."
+  m_Text: "A temperatura pode ser n\xE3o t\xE3o fria como nas cidades ao norte, mas
+    o ambiente vai de mal a pior."

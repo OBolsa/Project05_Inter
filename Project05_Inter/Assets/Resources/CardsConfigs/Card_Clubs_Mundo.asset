@@ -13,9 +13,8 @@ MonoBehaviour:
   m_Name: Card_Clubs_Mundo
   m_EditorClassIdentifier: 
   cardName: XXI - O Mundo
-  cardDescription: "Ganha pontos de maneira que a sua carta de menor valor tenha
-    o mesmo valor da carta de maior valor do oponente. Al\xE9m disso, o oponente
-    iguala sua carta de maior valor \xE0 carta de menor valor em campo."
+  cardDescription: "O jogador ganha 1 ponto para cada carta em seu pr\xF3prio campo
+    que seja do naipe de Paus."
   cardImage: {fileID: 0}
   cardValue: 0
   majorArcane: 1

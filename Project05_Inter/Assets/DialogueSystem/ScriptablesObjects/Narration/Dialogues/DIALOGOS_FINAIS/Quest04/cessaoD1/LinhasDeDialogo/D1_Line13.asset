@@ -13,5 +13,5 @@ MonoBehaviour:
   m_Name: D1_Line13
   m_EditorClassIdentifier: 
   m_Speaker: {fileID: 11400000, guid: ccad5da843ab58f4d9f26075ab69927b, type: 2}
-  m_Text: "Tudo gra\xE7as aos padres daqui, devo muito \xE0 \rcompaix\xE3o que tinham
-    em vida. Ah, sinto saudades \rde como tudo era antes...\r"
+  m_Text: "Tudo gra\xE7as aos padres daqui, devo muito \xE0 compaix\xE3o que tinham
+    em vida. Ah, sinto saudades de como tudo era antes..."

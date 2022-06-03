@@ -13,4 +13,4 @@ MonoBehaviour:
   m_Name: A2_Line04
   m_EditorClassIdentifier: 
   m_Speaker: {fileID: 11400000, guid: c8aefc08ca5e5a04295d3391a1dee5c1, type: 2}
-  m_Text: "Que homem teimoso! Por hora o deixarei assim \rpara n\xE3o ter mais problemas.\r"
+  m_Text: "Que homem teimoso! Por hora o deixarei assim para n\xE3o ter mais problemas."

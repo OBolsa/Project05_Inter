@@ -36,7 +36,7 @@ public class OPenduradoEffect : MonoBehaviour, ICardEffects
             };
         }
 
-        pointsToAdd = pointsToAdd > 0 ? pointsToAdd + pointsForThisCardEffectAlone : 0;
+        pointsToAdd = pointsToAdd > 0 ? 0 : pointsToAdd + pointsForThisCardEffectAlone;
 
         if (pointsToAdd > 0)
         {

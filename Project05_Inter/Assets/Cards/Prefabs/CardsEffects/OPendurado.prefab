@@ -43,6 +43,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 060660d784ddd3c4a898295f5eca00b8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  pointsForThisCardEffectAlone: 3
+  pointsForThisCardEffectAlone: 2
+  config: {fileID: 0}
   gameBoard: {fileID: 0}
   isOnPlayerBoard: 0

@@ -13,5 +13,5 @@ MonoBehaviour:
   m_Name: G1_Line08
   m_EditorClassIdentifier: 
   m_Speaker: {fileID: 11400000, guid: 02fbe1a12b355104e992d142db441511, type: 2}
-  m_Text: "\xC9 no m\xEDnimo curioso que apare\xE7as novamente \rjusto no momento
-    em que perdi a m\xE1scara que sela nosso acordo.\r"
+  m_Text: "\xC9 no m\xEDnimo curioso que apare\xE7as novamente justo no momento em
+    que perdi a m\xE1scara que sela nosso acordo."

@@ -13,5 +13,4 @@ MonoBehaviour:
   m_Name: D1_Line06
   m_EditorClassIdentifier: 
   m_Speaker: {fileID: 11400000, guid: ccad5da843ab58f4d9f26075ab69927b, type: 2}
-  m_Text: "Enfim, voc\xEA disse que \rprocura algu\xE9m que possa consert\xE1-la,
-    certo? \r"
+  m_Text: "Enfim, voc\xEA disse que procura algu\xE9m que possa consert\xE1-la, certo?"

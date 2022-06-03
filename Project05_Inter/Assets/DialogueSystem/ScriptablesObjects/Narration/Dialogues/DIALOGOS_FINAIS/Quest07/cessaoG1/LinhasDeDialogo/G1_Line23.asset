@@ -13,5 +13,5 @@ MonoBehaviour:
   m_Name: G1_Line23
   m_EditorClassIdentifier: 
   m_Speaker: {fileID: 11400000, guid: 02fbe1a12b355104e992d142db441511, type: 2}
-  m_Text: "Sabe, com tudo isso que aconteceu vejo que \rtalvez n\xE3o valha mesmo
-    a pena. Se deus existe \rele tempera nossas vidas com ironia."
+  m_Text: "Sabe, com tudo isso que aconteceu vejo que talvez n\xE3o valha mesmo a
+    pena. Se deus existe ele tempera nossas vidas com ironia."

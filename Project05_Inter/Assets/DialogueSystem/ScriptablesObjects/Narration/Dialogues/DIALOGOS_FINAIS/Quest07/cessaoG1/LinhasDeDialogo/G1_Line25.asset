@@ -13,5 +13,5 @@ MonoBehaviour:
   m_Name: G1_Line25
   m_EditorClassIdentifier: 
   m_Speaker: {fileID: 11400000, guid: c8aefc08ca5e5a04295d3391a1dee5c1, type: 2}
-  m_Text: "Ademais, j\xE1 ouvi o que queria. O tempo urge, vamos \rao que interessa.
+  m_Text: "Ademais, j\xE1 ouvi o que queria. O tempo urge, vamos ao que interessa.
     Eu proponho uma aposta."

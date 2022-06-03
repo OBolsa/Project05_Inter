@@ -13,9 +13,8 @@ MonoBehaviour:
   m_Name: Card_Hearts_Sacerdotisa
   m_EditorClassIdentifier: 
   cardName: II - A Sacerdotisa
-  cardDescription: "Essa carta dobra o valor da maior carta de mesmo naipe dessa
-    em seu campo. Caso n\xE3o haja nenhuma carta dentro dos requisitos, essa carta
-    ent\xE3o concede ao jogador 2 pontos"
+  cardDescription: "Dobra o valor de sua carta de Copas de maior valor. Caso n\xE3o
+    hajam cartas de copas, concede 2 pontos."
   cardImage: {fileID: 0}
   cardValue: 0
   majorArcane: 1

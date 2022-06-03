@@ -13,5 +13,5 @@ MonoBehaviour:
   m_Name: G1_Line11
   m_EditorClassIdentifier: 
   m_Speaker: {fileID: 11400000, guid: c8aefc08ca5e5a04295d3391a1dee5c1, type: 2}
-  m_Text: "N\xE3o se preocupe, n\xE3o vim te levar assim sem mais \rnem menos. Primeiro
+  m_Text: "N\xE3o se preocupe, n\xE3o vim te levar assim sem mais nem menos. Primeiro
     vamos conversar."

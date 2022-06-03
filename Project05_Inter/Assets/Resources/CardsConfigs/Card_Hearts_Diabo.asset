@@ -13,9 +13,10 @@ MonoBehaviour:
   m_Name: Card_Hearts_Diabo
   m_EditorClassIdentifier: 
   cardName: XV - O Diabo
-  cardDescription: 
+  cardDescription: Ganha 3 pontos para cada carta com valor menor ou igual a 3 em
+    seu campo.
   cardImage: {fileID: 0}
   cardValue: 0
   majorArcane: 1
   cardSuit: 2
-  effects: {fileID: 6782159985347266556, guid: 54cafa5b6a217644bbb446866583b918, type: 3}
+  effects: {fileID: 6782159985347266556, guid: 8860952817d266f4ab6182e87cd480ab, type: 3}

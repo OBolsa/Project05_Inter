@@ -13,5 +13,5 @@ MonoBehaviour:
   m_Name: B1_Line14
   m_EditorClassIdentifier: 
   m_Speaker: {fileID: 11400000, guid: c8aefc08ca5e5a04295d3391a1dee5c1, type: 2}
-  m_Text: "Insisto que tente se \rlembrar de mim, mas j\xE1 que no momento se sente
-    \raflito por conta da falta desse item, irei ajudar a \rencontr\xE1-lo."
+  m_Text: "Insisto que tente se lembrar de mim, mas j\xE1 que no momento se sente
+    aflito por conta da falta desse item, irei ajudar a encontr\xE1-lo."

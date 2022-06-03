@@ -13,5 +13,5 @@ MonoBehaviour:
   m_Name: D1_Line18
   m_EditorClassIdentifier: 
   m_Speaker: {fileID: 11400000, guid: ccad5da843ab58f4d9f26075ab69927b, type: 2}
-  m_Text: "Felizmente, acho que temos esse material aqui no \rmonast\xE9rio. Fale
-    com o Aristocrata, ele pode nos \rdar um pouco.\r"
+  m_Text: "Felizmente, acho que temos esse material aqui no monast\xE9rio. Fale com
+    o Aristocrata, ele pode nos dar um pouco."

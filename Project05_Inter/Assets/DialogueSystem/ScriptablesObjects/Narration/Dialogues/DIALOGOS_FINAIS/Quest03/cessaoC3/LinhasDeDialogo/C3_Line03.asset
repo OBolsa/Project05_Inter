@@ -13,5 +13,5 @@ MonoBehaviour:
   m_Name: C3_Line03
   m_EditorClassIdentifier: 
   m_Speaker: {fileID: 11400000, guid: e5e9f2b17e87b0b40b0fa57fe8c515ab, type: 2}
-  m_Text: "Eu n\xE3o! E se ela viesse correndo atr\xE1s de mim quando eu \rn\xE3o
-    tivesse olhando?"
+  m_Text: "Eu n\xE3o! E se ela viesse correndo atr\xE1s de mim quando eu n\xE3o tivesse
+    olhando?"

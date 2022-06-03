@@ -13,5 +13,5 @@ MonoBehaviour:
   m_Name: A1_Line05
   m_EditorClassIdentifier: 
   m_Speaker: {fileID: 11400000, guid: c8aefc08ca5e5a04295d3391a1dee5c1, type: 2}
-  m_Text: "Talvez. Mas se eu \u201Chipoteticamente\u201D fosse esse \restrangeiro
-    querendo entrar para ver um amigo, \rtemo que agora eu discordaria.\r"
+  m_Text: "Talvez. Mas se eu \u201Chipoteticamente\u201D fosse esse estrangeiro querendo
+    entrar para ver um amigo, temo que agora eu discordaria."

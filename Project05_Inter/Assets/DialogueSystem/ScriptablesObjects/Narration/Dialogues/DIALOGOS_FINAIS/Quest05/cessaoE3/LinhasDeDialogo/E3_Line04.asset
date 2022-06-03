@@ -13,4 +13,4 @@ MonoBehaviour:
   m_Name: E3_Line04
   m_EditorClassIdentifier: 
   m_Speaker: {fileID: 11400000, guid: e5e9f2b17e87b0b40b0fa57fe8c515ab, type: 2}
-  m_Text: "O que \xE9 resina papai?\r"
+  m_Text: "O que \xE9 resina papai?"

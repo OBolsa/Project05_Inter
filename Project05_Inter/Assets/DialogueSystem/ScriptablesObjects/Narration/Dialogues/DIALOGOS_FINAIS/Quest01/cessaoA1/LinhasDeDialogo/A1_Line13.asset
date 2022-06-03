@@ -13,4 +13,4 @@ MonoBehaviour:
   m_Name: A1_Line13
   m_EditorClassIdentifier: 
   m_Speaker: {fileID: 11400000, guid: f8e178efedde2f64bb06760438c0d6f5, type: 2}
-  m_Text: "Sem falsa mod\xE9stia, \xE9 \rclaro! Ah! Ah!\r"
+  m_Text: "Sem falsa mod\xE9stia, \xE9 claro! Ah! Ah!"

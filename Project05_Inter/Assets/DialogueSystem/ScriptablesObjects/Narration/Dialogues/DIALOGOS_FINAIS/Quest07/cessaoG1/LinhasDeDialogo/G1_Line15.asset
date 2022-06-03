@@ -13,5 +13,5 @@ MonoBehaviour:
   m_Name: G1_Line15
   m_EditorClassIdentifier: 
   m_Speaker: {fileID: 11400000, guid: 02fbe1a12b355104e992d142db441511, type: 2}
-  m_Text: "Se \xE9 isso \ro que tanto aguardou para me perguntar, sinto em \rlhe
-    frustrar, pois n\xE3o me arrependo de postergar \rminha morte, disso n\xE3o."
+  m_Text: "Se \xE9 isso o que tanto aguardou para me perguntar, sinto em lhe frustrar,
+    pois n\xE3o me arrependo de postergar minha morte, disso n\xE3o."
