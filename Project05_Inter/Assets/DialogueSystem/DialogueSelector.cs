@@ -84,17 +84,15 @@ public class DialogueSelector : MonoBehaviour, ISaveable
         {
             xPos = transform.position.x,
             yPos = transform.position.y,
-            zPos = transform.position.z,
-            xRot = transform.rotation.x,
-            yRot = transform.rotation.y,
-            zRot = transform.rotation.z
+            zPos = transform.position.z
         };
     }
 
     public void RestoreState(object state)
     {
         var savedData = (SaveData)state;
-        transform.SetPositionAndRotation(new Vector3(savedData.xPos, savedData.yPos, savedData.zPos), Quaternion.Euler(savedData.xRot, savedData.yRot, savedData.zRot));
+
+        transform.position = new Vector3(savedData.xPos, savedData.yPos, savedData.zPos);
     }
 
     [System.Serializable]
@@ -103,8 +101,5 @@ public class DialogueSelector : MonoBehaviour, ISaveable
         public float xPos;
         public float yPos;
         public float zPos;
-        public float xRot;
-        public float yRot;
-        public float zRot;
     }
 }

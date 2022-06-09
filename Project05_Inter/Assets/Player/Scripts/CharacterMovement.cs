@@ -6,6 +6,8 @@ public class CharacterMovement : MonoBehaviour
 {
     [Header("Character Movement")]
     public float characterSpeed;
+    private float characterRealSpeed;
+    public float CharacterRealSpeed => characterRealSpeed;
     public bool IsMoving { get { return inputDirection.magnitude > 0.1f; } }
     private bool canMove;
     private Vector3 inputDirection;
@@ -36,6 +38,8 @@ public class CharacterMovement : MonoBehaviour
 
     private void Update()
     {
+        characterRealSpeed = Input.GetKey(KeyCode.LeftShift) ? 4.5f : characterSpeed;
+
         DoGravity();
 
         foreach (var sfx in m_SFXs)
@@ -50,7 +54,7 @@ public class CharacterMovement : MonoBehaviour
     public void DoMovement()
     {
         UpdateInput();
-        inputDirection *= characterSpeed;
+        inputDirection *= characterRealSpeed;
 
         if (canMove)
         {
